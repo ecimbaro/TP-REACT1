@@ -1,16 +1,16 @@
 import { useState } from 'react'
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import  {Button } from 'react-bootstrap';
+import { Footer } from './Componentes/Footer';
 
 
 function App() {
 
   return (
-    <div className="container mt-3">
+    <div className="App">
 
-   {/* Prueba boton booststrap */}
-   <Button variant="primary" type="submit"> Submit</Button>
+   {/* Footer */}
+   <Footer/>
 
     </div>
   )
