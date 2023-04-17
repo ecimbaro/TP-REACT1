@@ -1,19 +1,21 @@
-import { useState } from 'react'
-import './App.css'
-import 'bootstrap/dist/css/bootstrap.min.css';
-import  {Button } from 'react-bootstrap';
+import { useEffect, useState } from "react";
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import ListaProductos from "./components/api/ListaProductos";
+
 
 
 function App() {
+ 
+ 
 
   return (
-    <div className="container mt-3">
-
-   {/* Prueba boton booststrap */}
-   <Button variant="primary" type="submit"> Submit</Button>
-
-    </div>
-  )
+   <>
+  <div className="lista-cards"> <ListaProductos/> </div>
+   </>
+    
+    
+  );
 }
 
-export default App
+export default App;
