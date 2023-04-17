@@ -1,0 +1,17 @@
+.sup{
+    background-color: #5e9188;
+    color:#ffffff;
+
+}
+p{
+    color: #ffffff; 
+}
+
+li{
+    color: #ffffff; 
+}
+
+a:link, a:visited, a:active{
+    color: #ffffff;
+    text-decoration:none;
+}
