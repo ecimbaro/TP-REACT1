@@ -1,10 +1,10 @@
-import React from 'react'
-import ListaProductos from './components/api/ListaProductos'
-import Footer from './components/Footer/Footer'
+import { useState } from 'react'
+import './App.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App = () => {
   return (
-    <div className='container'>
+    <div className="container mt-3">
 
     <ListaProductos/>
     <Footer/>
