@@ -10,7 +10,7 @@ const CardsLista = ({producto}) => {
   // const URL = "http://localhost:3000/products"
   return (
    
-    <Card className="contenedor container-fluid m-3 " style={{ width: "18rem" }}>
+    <Card className=" contenedor-productos container fluid " style={{ width: "17rem" }}>
       <Carousel interval={null} variant="dark" indicators={true}>
         <Carousel.Item>
           <img className="d-block w-100 img-product"
@@ -41,7 +41,7 @@ const CardsLista = ({producto}) => {
          
         </Card.Text>
         <div className="text-center">
-          <button className="btn btn-cards w-100">Comprar</button>
+          <button className="btn btn-cards w-100" >Comprar</button>
         </div>
       </Card.Body>
     </Card>

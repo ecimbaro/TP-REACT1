@@ -1,0 +1,21 @@
+.oferta-tiempo {
+    background-color: #3e5954;
+    color: white;
+    font-size: 2.5rem;
+    margin: 3%;
+    padding: 0.3em;
+}
+
+.texto-ofertaCarousel {
+    background-color:   #3e5954;
+    color: white;
+    font-size: 1.3rem;
+}
+.nombre {
+    font-size: 1rem;
+
+}
+.contenedor-ofertas {
+    margin: auto;
+
+}

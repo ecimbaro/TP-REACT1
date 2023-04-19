@@ -2,6 +2,7 @@
   "products": [
     {
       "id": 1,
+      "nuevo" : true,
       "nombre": "Samsung Z Flip4 256GB/8gb",
       "marca": "Samsung",
       "precio": 348.999,
@@ -17,6 +18,7 @@
     },
     {
       " id": 2,
+      "nuevo": false,
       "nombre": "Samsung Galaxy S22 128/8GB",
       "marca": "Samsung",
       "precio": 316.999,
@@ -31,6 +33,7 @@
     },
     {
       "id": 3,
+      "nuevo": false,
       "nombre": "Samsung Galaxy A23 128/4GB",
       "marca": "Samsung",
       "precio": 110.999,
@@ -45,11 +48,12 @@
     },
     {
       "id": 4,
+      "nuevo": true,
       "nombre": "Motorola G42 128GB Verde Atlántico",
       "marca": "Motorola",
       "precio": 82.999,
       "precioAntes": 120.999,
-      "descuento": "9 CUOTAS S/INTERES",
+      "descuento": "9 CUOTAS",
       "imagen": {
         "imgPrincipal": "https://carrefourar.vtexassets.com/arquivos/ids/307936-800-auto?v=638139818193670000&width=800&height=auto&aspect=true",
         "img1": "https://carrefourar.vtexassets.com/arquivos/ids/307941-1600-auto?v=638139818849470000&width=1600&height=auto&aspect=true",
@@ -59,6 +63,7 @@
     },
     {
       "id": 5,
+      "nuevo": false,
       "nombre": "Motorola E32 4GB 64GB Plata",
       "marca": "Motorola",
       "precio": 65.599,
@@ -73,11 +78,12 @@
     },
     {
       "id": 6,
+      "nuevo": false,
       "nombre": "Motorola G22 4gb 128gb azul",
       "marca": "Motorola",
       "precio": 69.999,
       "precioAntes": 75.999,
-      "descuento": "6 CUOTAS S/INTERES",
+      "descuento": "6 CUOTAS",
       "imagen": {
         "imgPrincipal": "https://carrefourar.vtexassets.com/arquivos/ids/247977-1600-auto?v=637909911749430000&width=1600&height=auto&aspect=true",
         "img1": "https://carrefourar.vtexassets.com/arquivos/ids/247979-1600-auto?v=637909911768370000&width=1600&height=auto&aspect=true",
@@ -87,6 +93,7 @@
     },
     {
       " id": 7,
+      "nuevo": false,
       "nombre": "Smartwatch Mobvoi TicWatch E3",
       "marca": "Mobvoi",
       "precio": 47.762,
@@ -101,6 +108,7 @@
     },
     {
       "  id": 8,
+      "nuevo": false,
       "nombre": "Smartwatch Amazfit Band 5 Black",
       "marca": "Amazfit",
       "precio": 10.012,
@@ -115,6 +123,7 @@
     },
     {
       "id": 9,
+      "nuevo": false,
       "nombre": "Smartwatch Haylou LS02 Negro",
       "marca": "Amazfit",
       "precio": 11.249,
@@ -129,11 +138,12 @@
     },
     {
       " id": 10,
+      "nuevo": false,
       "nombre": "Smartwatches Amazfit GTR 3 Gray",
       "marca": "Amazfit",
       "precio": 60.599,
       "precioAntes": 65.479,
-      "descuento": "10% OFF EN 1 PAGO",
+      "descuento": "10% OFF 1 PAGO",
       "imagen": {
         "imgPrincipal": "https://mundofixar.vtexassets.com/arquivos/ids/1104473-800-auto?v=638170776209570000&width=800&height=auto&aspect=true",
         "img1": "https://mundofixar.vtexassets.com/arquivos/ids/1104474-800-auto?v=638170776211770000&width=800&height=auto&aspect=true",
@@ -143,11 +153,12 @@
     },
     {
       " id": 11,
+      "nuevo": false,
       "nombre": "Smartwatch Xiaomi Mi Band 7 Negro",
       "marca": "Xioami",
       "precio": 16.999,
       "precioAntes": 21.189,
-      "descuento": "3 CUOTAS S/INTERES",
+      "descuento": "3 CUOTAS",
       "imagen": {
         "imgPrincipal": "https://mundofixar.vtexassets.com/arquivos/ids/1109919-800-auto?v=638171982129300000&width=800&height=auto&aspect=true",
         "img1": "https://mundofixar.vtexassets.com/arquivos/ids/1109929-800-auto?v=638171982138530000&width=800&height=auto&aspect=true",
@@ -157,6 +168,7 @@
     },
     {
       " id": 12,
+      "nuevo" : true,
       "nombre": "Smartwatch Xiaomi Mibro X1 Black",
       "marca": "Xioami",
       "precio": 15.999,
@@ -168,6 +180,67 @@
         "img2": "https://mundofixar.vtexassets.com/arquivos/ids/1109837-800-auto?v=638171924540600000&width=800&height=auto&aspect=true"
       },
       "descripcion": "Reloj inteligente Mibro Watch X1 con diseño redondo y deportivo, pantalla HD AMOLED y resistencia al agua 5 ATM"
+    },
+    {
+      " id": 13,
+      "nuevo" : true,
+      "nombre": "Cafetera Dolce Gusto Piccolo XS PV1A0558",
+      "marca": "Moulinex",
+      "precio": 27.414,
+      "precioAntes":47.490,
+      "descuento": "10% OFF UN PAGO",
+      "imagen": {
+        "imgPrincipal": "https://carrefourar.vtexassets.com/arquivos/ids/249067-1600-auto?v=637916147757700000&width=1600&height=auto&aspect=true",
+        "img1": "https://carrefourar.vtexassets.com/arquivos/ids/249069-1600-auto?v=637916147774270000&width=1600&height=auto&aspect=true",
+        "img2": "https://carrefourar.vtexassets.com/arquivos/ids/249068-1600-auto?v=637916147766130000&width=1600&height=auto&aspect=true"
+      },
+      "descripcion": "La cafetera Dolce Gusto Piccolo XS PV1A0558 roja posee: Potencia de 1500 W - Presión adecuada para alcanzar 15 bares de presión - Apagado automático después de 5 min de no uso - Sistema exclusivo de cápsulas Nescafe Dolce Gusto - Capacidad de 0,8 L."
+    },
+    {
+      " id": 14,
+      "nuevo" : false,
+      "nombre": "Cafetera Moulinex Dolce Gusto mini me",
+      "marca": "Moulinex",
+      "precio": 40.544,
+      "precioAntes":70.290,
+      "descuento": "6 CUOTAS",
+      "imagen": {
+        "imgPrincipal": "https://carrefourar.vtexassets.com/arquivos/ids/162461-1600-auto?v=637467661969600000&width=1600&height=auto&aspect=true",
+        "img1": "https://carrefourar.vtexassets.com/arquivos/ids/162462-1600-auto?v=637467661973200000&width=1600&height=auto&aspect=true",
+        "img2": "https://carrefourar.vtexassets.com/arquivos/ids/162464-1600-auto?v=637467661976800000&width=1600&height=auto&aspect=true"
+      },
+      "descripcion": "NESCAFÉ Dolce Gusto Mini Me es una máquina automática de diseño compacto y moderno. Gracias al sistema de alta presión de la máquina vas a poder crear bebidas de calidad profesional en la comodidad de tu hogar. Nuestras cápsulas están herméticamente selladas para conservar la frescura en cada taza. Elegí entre un intenso espresso, hasta nuestros deliciosos chocolates calientes, espumosos lattes y aromáticos tés. Con NESCAFÉ Dolce Gusto podés reinventar todas tus mañanas."
+    },
+    {
+      " id": 15,
+      "nuevo" : false,
+      "nombre": "Cafetera Nespresso Essenza MiniD auto",
+      "marca": "Nespresso",
+      "precio": 37.793,
+      "precioAntes":44.006,
+      "descuento": "14% OFF",
+      "imagen": {
+        "imgPrincipal": "https://www.cetrogar.com.ar/media/catalog/product/e/d/ed3981.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=&width=&canvas=:",
+        "img1": "https://www.cetrogar.com.ar/media/catalog/product/e/d/ed3981-3_2.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=&width=&canvas=:",
+        "img2": "https://www.cetrogar.com.ar/media/catalog/product/e/d/ed3981-1_2.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=&width=&canvas=:"
+      },
+      "descripcion": "Desde hace más de 30 años Nespresso, es una marca emblemática en concepto de café expresso perfecto. Comercializa productos con características tales como calidad, innovación, exclusividad y con un design inigualable."
+    },
+    {
+      " id": 16,
+      "nuevo" : true,
+      "nombre": "Cafetera expresso Oster PrimaLatte",
+      "marca": "Oster",
+      "precio": 137.799,
+      "precioAntes":170.290,
+      "descuento": "15% OFF",
+      "imagen": {
+        "imgPrincipal": "https://carrefourar.vtexassets.com/arquivos/ids/161378-1600-auto?v=637467657467000000&width=1600&height=auto&aspect=true",
+        "img1": "https://osterar.vteximg.com.br/arquivos/ids/156186-700-700/BVSTEM6603SS-1.jpg?v=637388939859330000/",
+        "img2": "https://osterar.vteximg.com.br/arquivos/ids/155545-700-700/BVSTEM6701SS-1.jpg?v=636222634085100000/"
+      },
+      "descripcion": "La cafetera expresso Oster PrimaLatte BVSTEM6701SS plata posee: Capacidad para 2 tazas expresso - 19 bares de potencia - Pico de vapor - Espuma para leche - Apagado automático - Programas: Expressos simples, dobles, Latte y Cappuccino."
     }
+
   ]
 }

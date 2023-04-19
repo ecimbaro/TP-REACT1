@@ -1,8 +1,10 @@
-.contenedor {
+.contenedor-productos {
     background: #fff;
     box-shadow: 0px 0px 10px rgba(156, 161, 233, 0.555);
     border-radius: 20px;
+    margin: auto;
 }
+
 .antes {
     font-size: 1em;
     text-decoration-line: line-through;
@@ -20,6 +22,7 @@
  .btn-cards {
     color: white;
     background-color:  #5e9188;
+    font-weight: bold;
 
  }
  .btn-cards:hover {
