@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import CardsLista from "../Cards/CardsLista";
+import CardsLista from "../cards/CardsLista";
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 
