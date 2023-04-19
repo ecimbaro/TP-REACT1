@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import CardsLista from "../Cards/CardsLista";
+import CardsLista from "../cards/CardsLista";
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 
@@ -13,7 +13,7 @@ const ListaProductos = () => {
     return response;
   };
 
-  const [productos, setProductos] = useState([]);
+  const  [productos, setProductos] = useState([]);
 
   useEffect(() => {
     getData()
@@ -26,7 +26,7 @@ const ListaProductos = () => {
 
        <Row sm={1} md={2} lg={3} xl={4}  className="g-4 justify-content-center">
       
-        {productos.map((producto,index) =>(
+        {productos.map((producto, index) =>(
           <Col>
           <CardsLista key={index} producto={producto}/>
           </Col>

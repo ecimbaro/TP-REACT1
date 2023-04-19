@@ -1,23 +1,19 @@
-import { useEffect, useState } from "react";
-import "./App.css";
-import "bootstrap/dist/css/bootstrap.min.css";
-import ListaProductos from "./components/api/ListaProductos";
-import CarouselOfertas from "./components/ofertas/CarouselOfertas";
 
-
-
-function App() {
- 
- 
-
+import { useState } from 'react'
+import './App.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import ListaProductos from './components/api/ListaProductos';
+import Footer from './components/Footer/Footer'
+import Carousel from './components/carrousel/Carousel'
+const App = () => {
   return (
-   <>
-  <div className="lista-cards"> <ListaProductos/> </div>
-<CarouselOfertas/>
-   </>
-    
-    
-  );
+    <div className="container mt-3">
+        <Carousel/>
+    <ListaProductos/>
+    <Footer/>
+    </div>
+  )
+
 }
 
-export default App;
+export default App
