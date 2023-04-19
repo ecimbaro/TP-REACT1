@@ -24,9 +24,9 @@ const ListaProductos = () => {
   return (
        <Row sm={1} md={2} lg={3} xl={4}  className="g-4">
       
-        {productos.map(producto =>(
+        {productos.map((producto, index) =>(
           <Col>
-          <CardsLista key={producto.id} producto={producto}/>
+          <CardsLista key={index} producto={producto}/>
           </Col>
            
         ))}

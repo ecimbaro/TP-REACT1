@@ -1,9 +1,9 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
-import imagen1 from "../img/1782.jpg";
-import imagen2 from "../img/1789.jpg";
-import imagen3 from "../img/1792.jpg";
+import imagen1 from './img/1782.jpg'
+import imagen2 from "./img/1789.jpg";
+import imagen3 from "./img/1792.jpg";
 
 import "./style.css";
 
