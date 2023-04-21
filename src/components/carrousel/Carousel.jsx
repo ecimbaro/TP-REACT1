@@ -30,13 +30,13 @@ const Carousel = () => {
       </ol>
       <div className="carousel-inner" role="listbox">
         <div className="carousel-item active ">
-          <img src={imagen1} className="w-100 d-block" alt="First slide" />
+          <img src={imagen1} className="img-fluid d-block" alt="First slide" />
         </div>
         <div className="carousel-item">
-          <img src={imagen2} className="w-100 d-block" alt="Second slide" />
+          <img src={imagen2} className="img-fluid d-block" alt="Second slide" />
         </div>
         <div className="carousel-item">
-          <img src={imagen3} className="w-100 d-block" alt="Third slide" />
+          <img src={imagen3} className="img-fluid d-block" alt="Third slide" />
         </div>
       </div>
       <button
