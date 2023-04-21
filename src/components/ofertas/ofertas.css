@@ -1,21 +1,22 @@
 .oferta-tiempo {
-    background-color: #3e5954;
-    color: white;
+    background: rgb(255, 51, 0);
+    background: linear-gradient(90deg, rgb(130, 0, 170) 0%, rgb(170, 41, 187) 28%, rgb(172, 95, 202) 52%);
+    width: 100%;
+    color: rgb(255, 255, 255);
     font-size: 2.5rem;
-    margin: 3%;
-    padding: 0.3em;
+    height: 3.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
 }
 
 .texto-ofertaCarousel {
-    background-color:   #3e5954;
+    background-color:   #490066de;
     color: white;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 .nombre {
     font-size: 1rem;
-
-}
-.contenedor-ofertas {
-    margin: auto;
 
 }

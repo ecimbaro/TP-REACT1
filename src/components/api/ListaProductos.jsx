@@ -4,16 +4,17 @@ import CardsLista from "../cards/CardsLista";
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 
+
+
+
 const ListaProductos = () => {
-  
+  const  [productos, setProductos] = useState([]);
   const URL = "http://localhost:3000/products";
 
   const getData = async () => {
     const response = await axios.get(URL);
     return response;
   };
-
-  const  [productos, setProductos] = useState([]);
 
   useEffect(() => {
     getData()
