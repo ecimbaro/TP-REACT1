@@ -1,173 +1,19 @@
 {
-  "products": [
+  "posts": [
     {
       "id": 1,
-      "nombre": "Samsung Z Flip4 256GB/8gb",
-      "marca": "Samsung",
-      "precio": 348.999,
-      "precioAntes": 299.999,
-      "descuento": "14% OFF",
-      "imagen": {
-        "imgPrincipal": "https://stylewatch.vtexassets.com/arquivos/ids/225126/Smartphone_Samsung_SMF721BZAKARO_01.jpg?v=638113066792930000",
-        "img1": "https://stylewatch.vtexassets.com/arquivos/ids/225127/Smartphone_Samsung_SMF721BZAKARO_02.jpg?v=638113066797500000",
-        "img2": "https://stylewatch.vtexassets.com/arquivos/ids/225128/Smartphone_Samsung_SMF721BZAKARO_03.jpg?v=638113066804670000"
-      },
-
-      "descripcion": "Las 2 cámaras traseras de 12 Mpx/12 Mpx del Smartphone Samsung Galaxy Z Fold 4 te permitirán tomar imágenes con más detalles y lograr efectos únicos como el famoso modo retrato de poca profundidad de campo. El dispositivo cuenta con cámara frontal de 10 Mpx para que puedas sacarte divertidas selfies o hacer videollamadas. Al plegarse, adopta un tamaño pequeño y compacto que te resultará muy cómodo para transportar. Cuando quieras disfrutar de tus contenidos favoritos se transforma desplegando su pantalla de 6.7. Podrás elegir entre el sensor de huella dactilar, o el reconocimiento facial que permite un desbloqueo hasta un 30% más rápido. Con la batería de 3700 mAh tendrás energía por mucho más tiempo para jugar, ver series o trabajar sin necesidad de realizar recargas. Con su memoria interna de 256 GB podrás descargar todos los archivos y aplicaciones que necesites, guardar fotos y almacenar tus películas favoritas."
-    },
-    {
-      " id": 2,
-      "nombre": "Samsung Galaxy S22 128/8GB",
-      "marca": "Samsung",
-      "precio": 316.999,
-      "precioAntes": 284.999,
-      "descuento": "10% OFF",
-      "imagen": {
-        "imgPrincipal": "https://stylewatch.vtexassets.com/arquivos/ids/218775/Smartphone_Samsung_SMS901EZKLARO_01.jpg?v=637964420492100000",
-        "img1": "https://stylewatch.vtexassets.com/arquivos/ids/218777/Smartphone_Samsung_SMS901EZKLARO_03.jpg?v=637964420718670000",
-        "img2": "https://stylewatch.vtexassets.com/arquivos/ids/218776/Smartphone_Samsung_SMS901EZKLARO_02.jpg?v=637964420617130000"
-      },
-      "descripcion": "El Smartphone Samsung Galaxy es un kit de nivel profesional que cabe en una mano. La cámara posterior triple y la cámara de selfie ofrecen hardware y software de cámara innovadores para que puedas capturar fácilmente una galería llena de contenido digno de compartir. La inspiración no espera una iluminación óptima y ahora tampoco tenés que hacerlo. El mayor salto en nuestra tecnología de video, la velocidad de fotogramas automática coincide con la velocidad de fps de tu entorno y Super Night Solution elimina el ruido en cada fotograma para obtener imágenes vívidas de alta calidad, ya sea que estés bajo el sol o bajo las estrellas. Adiós, resplandor. Luz solar, conoce la pantalla brillante del Galaxy S22 y la pantalla más brillante del Galaxy S22+. Las asombrosas pantallas Infinity-O de 120 Hz están diseñadas con Dynamic AMOLED 2X con tecnología Vision Booster para una alta visibilidad al aire libre, lo que mantiene la vista nítida a plena luz del día o de noche. Ahora el único resplandor que verás será el de las cámaras de los celosos."
-    },
-    {
-      "id": 3,
-      "nombre": "Samsung Galaxy A23 128/4GB",
-      "marca": "Samsung",
-      "precio": 110.999,
-      "precioAntes": 120.999,
-      "descuento": "10% OFF",
-      "imagen": {
-        "imgPrincipal": "https://stylewatch.vtexassets.com/arquivos/ids/217548/Smartphone_Samsung_SMA235MZWEARO_02.jpg?v=637937640969470000",
-        "img1": "https://stylewatch.vtexassets.com/arquivos/ids/217552/Smartphone_Samsung_SMA235MZWEARO_06.jpg?v=637937641619130000",
-        "img2": "https://stylewatch.vtexassets.com/arquivos/ids/217549/Smartphone_Samsung_SMA235MZWEARO_03.jpg?v=637937641064170000"
-      },
-      "descripcion": "El Smartphone Samsung tiene su memoria RAM de 4 GB permite que tu smartphone funcione de manera fluida y sin demoras al realizar distintas tareas, jugar o navegar. Con su memoria interna de 128 GB podrás almacenar archivos y aplicaciones de gran tamaño sin necesidad de subirlos a la nube y aprovechar tus momentos sin conexión para darles el máximo uso."
-    },
-    {
-      "id": 4,
-      "nombre": "Motorola G42 128GB Verde Atlántico",
-      "marca": "Motorola",
-      "precio": 82.999,
-      "precioAntes": 120.999,
-      "descuento": "9 CUOTAS S/INTERES",
-      "imagen": {
-        "imgPrincipal": "https://carrefourar.vtexassets.com/arquivos/ids/307936-800-auto?v=638139818193670000&width=800&height=auto&aspect=true",
-        "img1": "https://carrefourar.vtexassets.com/arquivos/ids/307941-1600-auto?v=638139818849470000&width=1600&height=auto&aspect=true",
-        "img2": "https://carrefourar.vtexassets.com/arquivos/ids/307939-1600-auto?v=638139818578000000&width=1600&height=auto&aspect=true"
-      },
-      "descripcion": "Dale vida a tu contenido de entretenimiento favorito gracias al contraste infinito de tonos oscuros más profundos y colores vibrantes en la pantalla OLED FHD+ de 6''. Gracias a la resolución Full HD+, obtené imágenes que quedan siempre supernítidas."
-    },
-    {
-      "id": 5,
-      "nombre": "Motorola E32 4GB 64GB Plata",
-      "marca": "Motorola",
-      "precio": 65.599,
-      "precioAntes": 75.999,
-      "descuento": "15% OFF",
-      "imagen": {
-        "imgPrincipal": "https://carrefourar.vtexassets.com/arquivos/ids/270947-1600-auto?v=638085514641130000&width=1600&height=auto&aspect=true",
-        "img1": "https://carrefourar.vtexassets.com/arquivos/ids/270951-1600-auto?v=638085515229100000&width=1600&height=auto&aspect=true",
-        "img2": "https://carrefourar.vtexassets.com/arquivos/ids/270952-1600-auto?v=638085515373470000&width=1600&height=auto&aspect=true"
-      },
-      "descripcion": "La pantalla Max Vision HD+ de 6.5'' tiene una relación de aspecto de 20:9 para que te desplaces menos y veas más. La relación pantalla-cuerpo de 87 % significa que hay más espacio en la pantalla, pero aún así podés usar el teléfono cómodamente con una sola mano."
-    },
-    {
-      "id": 6,
-      "nombre": "Motorola G22 4gb 128gb azul",
-      "marca": "Motorola",
-      "precio": 69.999,
-      "precioAntes": 75.999,
-      "descuento": "6 CUOTAS S/INTERES",
-      "imagen": {
-        "imgPrincipal": "https://carrefourar.vtexassets.com/arquivos/ids/247977-1600-auto?v=637909911749430000&width=1600&height=auto&aspect=true",
-        "img1": "https://carrefourar.vtexassets.com/arquivos/ids/247979-1600-auto?v=637909911768370000&width=1600&height=auto&aspect=true",
-        "img2": "https://carrefourar.vtexassets.com/arquivos/ids/247980-1600-auto?v=637909911776200000&width=1600&height=auto&aspect=true"
-      },
-      "descripcion": "El nivel de oxígeno en sangre (SpO2) es un importante indicador de la capacidad de absorción de oxígeno de su cuerpo. El sensor de oxígeno en sangre del TicWatch E3 consta de cuatro grupos de luces LED infrarrojas y mide su nivel de SpO2 haciendo brillar la luz en los vasos sanguíneos de su muñeca. Active la monitorización de 24 horas para controlar y registrar automáticamente su nivel de oxígeno en sangre a intervalos regulares a lo largo del día y la noche y destacar rápidamente los posibles riesgos para la salud."
-    },
-    {
-      " id": 7,
-      "nombre": "Smartwatch Mobvoi TicWatch E3",
-      "marca": "Mobvoi",
-      "precio": 47.762,
-      "precioAntes": 53.069,
-      "descuento": "11% OFF",
-      "imagen": {
-        "imgPrincipal": "https://mundofixar.vtexassets.com/arquivos/ids/1109782-800-auto?v=638171917338400000&width=800&height=auto&aspect=true",
-        "img1": "https://mundofixar.vtexassets.com/arquivos/ids/1109788-800-auto?v=638171917345300000&width=800&height=auto&aspect=true",
-        "img2": "https://mundofixar.vtexassets.com/arquivos/ids/1109792-800-auto?v=638171917348830000&width=800&height=auto&aspect=true"
-      },
-      "descripcion": "Smartwatch ZL02D Reloj Inteligente. Compatible con teléfonos con tecnología Bluetooth para dispositivos con Android 5.0 o superior y iOS 9.0 en adelante (Samsung, Xiaomi, iPhone, Motorola, Sony, Huawei, LG, entre otros)."
-    },
-    {
-      "  id": 8,
-      "nombre": "Smartwatch Amazfit Band 5 Black",
-      "marca": "Amazfit",
-      "precio": 10.012,
-      "precioAntes": 11.779,
-      "desuento": "5% OFF",
-      "imagen": {
-        "imgPrincipal": "https://mundofixar.vtexassets.com/arquivos/ids/1109845-800-auto?v=638171928127030000&width=800&height=auto&aspect=true",
-        "img1": "https://mundofixar.vtexassets.com/arquivos/ids/1109849-800-auto?v=638171928130630000&width=800&height=auto&aspect=true",
-        "img2": "https://mundofixar.vtexassets.com/arquivos/ids/1109851-800-auto?v=638171928133130000&width=800&height=auto&aspect=true"
-      },
-      "descripcion": "Funciones más destacadas. A través del sensor incorporado, podrás conocer tu frecuencia cardíaca y ajustar así tus entrenamientos. Además, permite controlar también la saturación de oxígeno en sangre. A través del sistema SomnusCare podrás conocer la calidad de tu sueño y ajustar tus hábitos para que estés más descansado y activo para afrontar el próximo día."
-    },
-    {
-      "id": 9,
-      "nombre": "Smartwatch Haylou LS02 Negro",
-      "marca": "Amazfit",
-      "precio": 11.249,
-      "precioAntes": 13.479,
-      "descuento": "5% OFF",
-      "imagen": {
-        "imgPrincipal": "https://mundofixar.vtexassets.com/arquivos/ids/1109624-800-auto?v=638171816552400000&width=800&height=auto&aspect=true",
-        "img1": "https://mundofixar.vtexassets.com/arquivos/ids/1109631-800-auto?v=638171816561000000&width=800&height=auto&aspect=true",
-        "img2": "https://mundofixar.vtexassets.com/arquivos/ids/1109626-800-auto?v=638171816554300000&width=800&height=auto&aspect=true"
-      },
-      "descripcion": "Haylou LS02 enriquece una variedad de modos de deporte. Ya sea el senderismo diario y la navegación, puede establecer sus objetivos deportivos, registrar sus datos deportivos, la interfaz de operación es simple y fácil de entender, como el entrenamiento personal en la muñeca para ayudar a su ejercicio libre más autodisciplina."
-    },
-    {
-      " id": 10,
-      "nombre": "Smartwatches Amazfit GTR 3 Gray",
-      "marca": "Amazfit",
-      "precio": 60.599,
-      "precioAntes": 65.479,
-      "descuento": "10% OFF EN 1 PAGO",
-      "imagen": {
-        "imgPrincipal": "https://mundofixar.vtexassets.com/arquivos/ids/1104473-800-auto?v=638170776209570000&width=800&height=auto&aspect=true",
-        "img1": "https://mundofixar.vtexassets.com/arquivos/ids/1104474-800-auto?v=638170776211770000&width=800&height=auto&aspect=true",
-        "img2": "https://mundofixar.vtexassets.com/arquivos/ids/1104476-800-auto?v=638170776215830000&width=800&height=auto&aspect=true"
-      },
-      "descripcion": "Inspirado en los relojes clásicos, el elegantísimo Amazfit GTR 3 Pro tiene un cuerpo circular, confeccionado en una aleación de aluminio aeronáutico durable, terminado con una elegante corona giratoria. El diseño sin bisel 1 se integra con la pantalla de cristal curvo para profundizar la inmersión, y las pulseras cómodas y modernas pueden combinarse con tu vestimenta, desde un traje a ropa deportiva, para destacar tu estilo."
-    },
-    {
-      " id": 11,
-      "nombre": "Smartwatch Xiaomi Mi Band 7 Negro",
-      "marca": "Xioami",
-      "precio": 16.999,
-      "precioAntes": 21.189,
-      "descuento": "3 CUOTAS S/INTERES",
-      "imagen": {
-        "imgPrincipal": "https://mundofixar.vtexassets.com/arquivos/ids/1109919-800-auto?v=638171982129300000&width=800&height=auto&aspect=true",
-        "img1": "https://mundofixar.vtexassets.com/arquivos/ids/1109929-800-auto?v=638171982138530000&width=800&height=auto&aspect=true",
-        "img2": "https://mundofixar.vtexassets.com/arquivos/ids/1109925-800-auto?v=638171982134300000&width=800&height=auto&aspect=true"
-      },
-      "descripcion": "La nueva Mi Band 7 cuenta con una pantalla significativamente más grande que su predecesora. El nuevo panel AMOLED del wearable tiene 1,62 pulgadas, aproximadamente un 25% superior al utilizado en la Mi Band 6. Su resolución también aumenta a los 192 x 490 píxeles y quizá su brillo máximo en los entornos de los 500 nits. Xiaomi ha incorporado una pantalla más grande y de mayor resolución en su dispositivo. Esto se traduce en mayor espacio y calidad de visualización, mostrando desde gráficos hasta datos importantes."
-    },
-    {
-      " id": 12,
-      "nombre": "Smartwatch Xiaomi Mibro X1 Black",
-      "marca": "Xioami",
-      "precio": 15.999,
-      "precioAntes": 20.599,
-      "descuento": "AHORRÁS $4600",
-      "imagen": {
-        "imgPrincipal": "https://mundofixar.vtexassets.com/arquivos/ids/1109820-800-auto?v=638171924528530000&width=800&height=auto&aspect=true",
-        "img1": "https://mundofixar.vtexassets.com/arquivos/ids/1109823-800-auto?v=638171924530930000&width=800&height=auto&aspect=true",
-        "img2": "https://mundofixar.vtexassets.com/arquivos/ids/1109837-800-auto?v=638171924540600000&width=800&height=auto&aspect=true"
-      },
-      "descripcion": "Reloj inteligente Mibro Watch X1 con diseño redondo y deportivo, pantalla HD AMOLED y resistencia al agua 5 ATM"
+      "title": "json-server",
+      "author": "typicode"
     }
-  ]
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
 }
