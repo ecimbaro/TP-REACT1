@@ -24,13 +24,10 @@ function CarouselOfertas({ categoria }) {
   }, [categoria]);
 
   return (
-
- <>
-      <div className=" container oferta-tiempo">OFERTAS DEL MES</div>
-
-      <div className="container mt-5 mb-5">
+ <div className="container-ofertas pt-5 " >
+ <div className="oferta-tiempo">OFERTAS DEL MES</div>
+      <div className="carousel-ofertas pt-5 pb-5 mx-auto" style={{ width: "50%" }}>
         <Carousel
-          // style={{ width: "80%"}}
           variant="dark"
           className=" d-flex justify-content-center"
           indicators={false}
@@ -56,7 +53,8 @@ function CarouselOfertas({ categoria }) {
           ))}
         </Carousel>
       </div>
-  </>
+  </div>
+  
   );
 }
 

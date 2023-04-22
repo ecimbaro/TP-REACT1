@@ -1,6 +1,5 @@
 .oferta-tiempo {
-    background: rgb(255, 51, 0);
-    background: linear-gradient(90deg, rgb(130, 0, 170) 0%, rgb(170, 41, 187) 28%, rgb(172, 95, 202) 52%);
+    background: #3e5954;
     width: 100%;
     color: rgb(255, 255, 255);
     font-size: 2.5rem;
@@ -12,11 +11,14 @@
 }
 
 .texto-ofertaCarousel {
-    background-color:   #490066de;
+    background-color:   #3e5954;
     color: white;
     font-size: 1.5rem;
 }
 .nombre {
     font-size: 1rem;
 
+}
+.container-ofertas {
+  height: 20%;
 }

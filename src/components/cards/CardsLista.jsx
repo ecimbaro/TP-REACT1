@@ -6,10 +6,10 @@ import "./cardsStyle.css";
 
 
 const CardsLista = ({producto}) => {
-  // const URL = "http://localhost:3000/products"
+
   return (
    
-    <Card className=" contenedor-productos container fluid " style={{ width: "17rem" }}>
+    <Card className=" contenedor-productos" style={{ width: "17rem" }}>
       <Carousel interval={null} variant="dark" indicators={true}>
         <Carousel.Item>
           <img className="d-block w-100 img-product"

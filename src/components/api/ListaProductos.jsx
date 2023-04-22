@@ -21,21 +21,22 @@ const ListaProductos = () => {
       .then((response) => setProductos(response.data))
       .catch((e) => console.log(e));
   }, []);
-
+ 
   return (
-    <div className="container fluid">
+    <div className="container pb-4 pt-3">
 
-       <Row sm={1} md={2} lg={3} xl={4}  className="g-4 justify-content-center">
-      
-        {productos.map((producto, index) =>(
-          <Col>
-          <CardsLista key={index} producto={producto}/>
-          </Col>
-           
-        ))}
-       
-       </Row>
-       </div>
+    <Row sm={1} md={2} lg={3} xl={4} className="g-4 justify-content-center">
+  
+      {productos.map((producto, index) => (
+        <Col key={index}>
+          <CardsLista producto={producto}/>
+        </Col>
+  
+      ))}
+  
+    </Row>
+  
+  </div>
   );
 };
 export default ListaProductos;
