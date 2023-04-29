@@ -3,48 +3,60 @@ import Card from "react-bootstrap/Card";
 import Carousel from "react-bootstrap/Carousel";
 import "./cardsStyle.css";
 
-
-
-const CardsLista = ({producto}) => {
+//paso por prop data y funciones
+const CardsLista = ({ data, addToCart }) => {
+  //destructuracion de props
+  const { id, imagen, nombre, precioAntes, descuento, precio } = data;
 
   return (
-   
-    <Card className=" contenedor-productos" style={{ width: "17rem" }}>
+    <Card className="contenedor-productos" style={{ width: "17rem" }}>
       <Carousel interval={null} variant="dark" indicators={true}>
         <Carousel.Item>
-          <img className="d-block w-100 img-product"
-            src={producto.imagen.imgPrincipal}
-            alt="First slide"/>
+          <Card.Img
+            className="d-block w-100 pt-1 img-product"
+            src={imagen.imgPrincipal}
+            alt="First slide"
+          />
         </Carousel.Item>
 
         <Carousel.Item>
-          <img className="d-block w-100  img-product"
-            src={producto.imagen.img1} alt="Second slide" />
+          <Card.Img
+            className="d-block w-100  img-product"
+            src={imagen.img1}
+            alt="Second slide"
+          />
         </Carousel.Item>
 
         <Carousel.Item>
-          <img className="d-block w-100  img-product"
-            src={producto.imagen.img2} alt="Third slide"/>
+          <Card.Img
+            className="d-block w-100  img-product"
+            src={imagen.img2}
+            alt="Third slide"
+          />
         </Carousel.Item>
-
       </Carousel>
       <Card.Body>
-        <Card.Title className="text-center" >{producto.nombre}</Card.Title>
-        <Card.Text className="text-center" >
+        <Card.Title className="text-center prod-nombre">{nombre}</Card.Title>
+        <Card.Text className="text-center">
           <div>
-          <span className="antes"> ${producto.precioAntes} </span>
-          <span className="descuento" >{producto.descuento} </span>
+            <span className="antes"> ${precioAntes} </span>
+            <span className="descuento"> {descuento} </span>
           </div>
-
-          <span className="fw-bold oferta"> ${producto.precio} </span>
-         
+          <div>
+            {" "}
+            <span className="fw-bold oferta"> ${precio} </span>{" "}
+          </div>
         </Card.Text>
         <div className="text-center">
-          <button className="btn btn-cards w-100" >Comprar</button>
+          <button
+            className="btn btn-cards w-100"
+            onClick={() => addToCart(id)}
+          >
+            Comprar
+          </button>
         </div>
       </Card.Body>
     </Card>
- 
   );
 };
 
