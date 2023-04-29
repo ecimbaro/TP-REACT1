@@ -7,6 +7,7 @@ import Carousel from "./components/carrousel/Carousel";
 import{ Navbar }from './components/Navbar/Navbar'
 import Redes from "./components/carrousel/Redes";
 import CarouselOfertas from "./components/ofertas/CarouselOfertas";
+import Instagram from './components/Instagram/Instagram'
 
 
 const App = () => {
@@ -17,6 +18,7 @@ const App = () => {
       <CarouselOfertas />
       <ListaProductos />
       <Redes />
+      <Instagram/>
       <Footer />
     </div>
   );
