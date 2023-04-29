@@ -4,6 +4,7 @@
       "id": 1,
       "nuevo" : true,
       "nombre": "Samsung Z Flip4 256GB/8gb",
+      "categoria":" Smartphone",
       "marca": "Samsung",
       "precio": 348.999,
       "precioAntes": 299.999,
@@ -17,9 +18,10 @@
       "descripcion": "Las 2 cámaras traseras de 12 Mpx/12 Mpx del Smartphone Samsung Galaxy Z Fold 4 te permitirán tomar imágenes con más detalles y lograr efectos únicos como el famoso modo retrato de poca profundidad de campo. El dispositivo cuenta con cámara frontal de 10 Mpx para que puedas sacarte divertidas selfies o hacer videollamadas. Al plegarse, adopta un tamaño pequeño y compacto que te resultará muy cómodo para transportar. Cuando quieras disfrutar de tus contenidos favoritos se transforma desplegando su pantalla de 6.7. Podrás elegir entre el sensor de huella dactilar, o el reconocimiento facial que permite un desbloqueo hasta un 30% más rápido. Con la batería de 3700 mAh tendrás energía por mucho más tiempo para jugar, ver series o trabajar sin necesidad de realizar recargas. Con su memoria interna de 256 GB podrás descargar todos los archivos y aplicaciones que necesites, guardar fotos y almacenar tus películas favoritas."
     },
     {
-      " id": 2,
+      "id": 2,
       "nuevo": false,
       "nombre": "Samsung Galaxy S22 128/8GB",
+      "categoria":" Smartphone",
       "marca": "Samsung",
       "precio": 316.999,
       "precioAntes": 284.999,
@@ -35,6 +37,7 @@
       "id": 3,
       "nuevo": false,
       "nombre": "Samsung Galaxy A23 128/4GB",
+      "categoria":" Smartphone",
       "marca": "Samsung",
       "precio": 110.999,
       "precioAntes": 120.999,
@@ -49,7 +52,8 @@
     {
       "id": 4,
       "nuevo": true,
-      "nombre": "Motorola G42 128GB Verde Atlántico",
+      "nombre": "Motorola G42 128GB",
+      "categoria":" Smartphone",
       "marca": "Motorola",
       "precio": 82.999,
       "precioAntes": 120.999,
@@ -64,7 +68,8 @@
     {
       "id": 5,
       "nuevo": false,
-      "nombre": "Motorola E32 4GB 64GB Plata",
+      "nombre": "Motorola E32 4GB 64GB",
+      "categoria":" Smartphone",
       "marca": "Motorola",
       "precio": 65.599,
       "precioAntes": 75.999,
@@ -79,7 +84,8 @@
     {
       "id": 6,
       "nuevo": false,
-      "nombre": "Motorola G22 4gb 128gb azul",
+      "nombre": "Motorola G22 4gb 128gb",
+      "categoria":" Smartphone",
       "marca": "Motorola",
       "precio": 69.999,
       "precioAntes": 75.999,
@@ -92,9 +98,10 @@
       "descripcion": "El nivel de oxígeno en sangre (SpO2) es un importante indicador de la capacidad de absorción de oxígeno de su cuerpo. El sensor de oxígeno en sangre del TicWatch E3 consta de cuatro grupos de luces LED infrarrojas y mide su nivel de SpO2 haciendo brillar la luz en los vasos sanguíneos de su muñeca. Active la monitorización de 24 horas para controlar y registrar automáticamente su nivel de oxígeno en sangre a intervalos regulares a lo largo del día y la noche y destacar rápidamente los posibles riesgos para la salud."
     },
     {
-      " id": 7,
+      "id": 7,
       "nuevo": false,
       "nombre": "Smartwatch Mobvoi TicWatch E3",
+      "categoria":" Smart watch",
       "marca": "Mobvoi",
       "precio": 47.762,
       "precioAntes": 53.069,
@@ -102,20 +109,21 @@
       "imagen": {
         "imgPrincipal": "data:image/jpeg;base64,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",
         "img1": "https://m.media-amazon.com/images/I/61jliWdUJoL._AC_SL1500_.jpg",
-        "img2": "https://mundofixar.vtexassets.com/arquivos/ids/1130304-800-auto?v=638176118866400000&width=800&height=auto&aspect=true"
+        "img2": "https://www.tradeinn.com/f/13864/138645566_3/mobvoi-smartwatch-ticwatch-e3.jpg"
       },
       "descripcion": "Smartwatch ZL02D Reloj Inteligente. Compatible con teléfonos con tecnología Bluetooth para dispositivos con Android 5.0 o superior y iOS 9.0 en adelante (Samsung, Xiaomi, iPhone, Motorola, Sony, Huawei, LG, entre otros)."
     },
     {
-      "  id": 8,
+      "id": 8,
       "nuevo": false,
-      "nombre": "Smartwatch Amazfit Band 5 Black",
+      "nombre": "Smartwatch Amazfit Band 5",
+      "categoria":" Smart watch",
       "marca": "Amazfit",
       "precio": 10.012,
       "precioAntes": 11.779,
       "desuento": "5% OFF",
       "imagen": {
-        "imgPrincipal": "https://mundofixar.vtexassets.com/arquivos/ids/1131212-800-auto?v=638176233720870000&width=800&height=auto&aspect=true",
+        "imgPrincipal": "https://http2.mlstatic.com/D_NQ_NP_785408-MLA50785869885_072022-O.webp",
         "img1": "https://tecnofe.com.ar/wp-content/uploads/2021/09/miband6.jpg",
         "img2": "https://http2.mlstatic.com/D_NQ_NP_990731-MLA54487850385_032023-O.webp"
       },
@@ -123,8 +131,9 @@
     },
     {
       "id": 9,
-      "nuevo": false,
-      "nombre": "Smartwatch Haylou LS02 Negro",
+      "nuevo": true,
+      "nombre": "Smartwatch Haylou LS02",
+      "categoria":" Smart watch",
       "marca": "Amazfit",
       "precio": 11.249,
       "precioAntes": 13.479,
@@ -137,9 +146,10 @@
       "descripcion": "Haylou LS02 enriquece una variedad de modos de deporte. Ya sea el senderismo diario y la navegación, puede establecer sus objetivos deportivos, registrar sus datos deportivos, la interfaz de operación es simple y fácil de entender, como el entrenamiento personal en la muñeca para ayudar a su ejercicio libre más autodisciplina."
     },
     {
-      " id": 10,
+      "id": 10,
       "nuevo": false,
       "nombre": "Smartwatches Amazfit GTR 3",
+      "categoria":" Smart watch",
       "marca": "Amazfit",
       "precio": 60.599,
       "precioAntes": 65.479,
@@ -152,39 +162,42 @@
       "descripcion": "Inspirado en los relojes clásicos, el elegantísimo Amazfit GTR 3 Pro tiene un cuerpo circular, confeccionado en una aleación de aluminio aeronáutico durable, terminado con una elegante corona giratoria. El diseño sin bisel 1 se integra con la pantalla de cristal curvo para profundizar la inmersión, y las pulseras cómodas y modernas pueden combinarse con tu vestimenta, desde un traje a ropa deportiva, para destacar tu estilo."
     },
     {
-      " id": 11,
-      "nuevo": false,
-      "nombre": "Smartwatch Xiaomi Mi Band 7 Negro",
+      "id": 11,
+      "nuevo": true,
+      "nombre": "Smartwatch Xiaomi Mi Band 7",
+      "categoria":" Smart watch",
       "marca": "Xioami",
       "precio": 16.999,
       "precioAntes": 21.189,
       "descuento": "3 CUOTAS",
       "imagen": {
-        "imgPrincipal": "https://mundofixar.vtexassets.com/arquivos/ids/1109919-800-auto?v=638171982129300000&width=800&height=auto&aspect=true",
-        "img1": "https://mundofixar.vtexassets.com/arquivos/ids/1109929-800-auto?v=638171982138530000&width=800&height=auto&aspect=true",
-        "img2": "https://mundofixar.vtexassets.com/arquivos/ids/1109925-800-auto?v=638171982134300000&width=800&height=auto&aspect=true"
+        "imgPrincipal": "https://s3-sa-east-1.amazonaws.com/saasargentina/IyCM800rbjwI5JMNADJC/imagen",
+        "img1": "https://ursainformatica.com.ar/wp-content/uploads/2021/09/Reloj-Xiaomi-Smart-Band-6-01.jpg",
+        "img2": "https://buytek.net/wp-content/uploads/2021/08/Mi-band-6.5.jpg"
       },
       "descripcion": "La nueva Mi Band 7 cuenta con una pantalla significativamente más grande que su predecesora. El nuevo panel AMOLED del wearable tiene 1,62 pulgadas, aproximadamente un 25% superior al utilizado en la Mi Band 6. Su resolución también aumenta a los 192 x 490 píxeles y quizá su brillo máximo en los entornos de los 500 nits. Xiaomi ha incorporado una pantalla más grande y de mayor resolución en su dispositivo. Esto se traduce en mayor espacio y calidad de visualización, mostrando desde gráficos hasta datos importantes."
     },
     {
-      " id": 12,
+      "id": 12,
       "nuevo" : true,
-      "nombre": "Smartwatch Xiaomi Mibro X1 Black",
+      "nombre": "Smartwatch Xiaomi Mibro X1",
+      "categoria":" Smart watch",
       "marca": "Xioami",
       "precio": 15.999,
       "precioAntes": 20.599,
       "descuento": "AHORRÁS $4600",
       "imagen": {
-        "imgPrincipal": "https://mundofixar.vtexassets.com/arquivos/ids/1109820-800-auto?v=638171924528530000&width=800&height=auto&aspect=true",
+        "imgPrincipal": "https://d2r9epyceweg5n.cloudfront.net/stores/443/907/products/173smartwatch-xiaomi-mibro-x1-imagen-1605491-5105488d8e4d7dbda216605850256299-480-0.jpg",
         "img1": "https://http2.mlstatic.com/D_NQ_NP_839366-MLA54930994882_042023-O.webp",
         "img2": "https://d3ugyf2ht6aenh.cloudfront.net/stores/477/775/products/kweofjvjvpdgu49d11-b87b2f767e62c639d316497645109507-1024-1024.jpg"
       },
       "descripcion": "Reloj inteligente Mibro Watch X1 con diseño redondo y deportivo, pantalla HD AMOLED y resistencia al agua 5 ATM"
     },
     {
-      " id": 13,
+      "id": 13,
       "nuevo" : true,
-      "nombre": "Cafetera Dolce Gusto Piccolo XS PV1A0558",
+      "nombre": "Cafetera Dolce Gusto Piccolo XS",
+      "categoria":" cafeteras",
       "marca": "Moulinex",
       "precio": 27.414,
       "precioAntes":47.490,
@@ -197,9 +210,10 @@
       "descripcion": "La cafetera Dolce Gusto Piccolo XS PV1A0558 roja posee: Potencia de 1500 W - Presión adecuada para alcanzar 15 bares de presión - Apagado automático después de 5 min de no uso - Sistema exclusivo de cápsulas Nescafe Dolce Gusto - Capacidad de 0,8 L."
     },
     {
-      " id": 14,
+      "id": 14,
       "nuevo" : false,
       "nombre": "Cafetera Moulinex Dolce Gusto mini me",
+      "categoria":" cafeteras",
       "marca": "Moulinex",
       "precio": 40.544,
       "precioAntes":70.290,
@@ -212,9 +226,10 @@
       "descripcion": "NESCAFÉ Dolce Gusto Mini Me es una máquina automática de diseño compacto y moderno. Gracias al sistema de alta presión de la máquina vas a poder crear bebidas de calidad profesional en la comodidad de tu hogar. Nuestras cápsulas están herméticamente selladas para conservar la frescura en cada taza. Elegí entre un intenso espresso, hasta nuestros deliciosos chocolates calientes, espumosos lattes y aromáticos tés. Con NESCAFÉ Dolce Gusto podés reinventar todas tus mañanas."
     },
     {
-      " id": 15,
+      "id": 15,
       "nuevo" : false,
       "nombre": "Cafetera Nespresso Essenza MiniD auto",
+      "categoria":" cafeteras",
       "marca": "Nespresso",
       "precio": 37.793,
       "precioAntes":44.006,
@@ -227,9 +242,10 @@
       "descripcion": "Desde hace más de 30 años Nespresso, es una marca emblemática en concepto de café expresso perfecto. Comercializa productos con características tales como calidad, innovación, exclusividad y con un design inigualable."
     },
     {
-      " id": 16,
+      "id": 16,
       "nuevo" : true,
       "nombre": "Cafetera expresso Oster PrimaLatte",
+      "categoria":" cafeteras",
       "marca": "Oster",
       "precio": 137.799,
       "precioAntes":170.290,
@@ -242,5 +258,6 @@
       "descripcion": "La cafetera expresso Oster PrimaLatte BVSTEM6701SS plata posee: Capacidad para 2 tazas expresso - 19 bares de potencia - Pico de vapor - Espuma para leche - Apagado automático - Programas: Expressos simples, dobles, Latte y Cappuccino."
     }
 
-  ]
+  ],
+  "carrito":[]
 }

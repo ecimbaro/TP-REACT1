@@ -1,0 +1,29 @@
+.categorias {
+  display: flex;
+  justify-content: space-evenly;
+  height: 12rem;
+  
+}
+.contenedor-categoria {
+  display: flex;
+  width: 15em;
+  max-height: 12em;
+  border-radius: 25px;
+  border: none;
+  -webkit-box-shadow: 20px 15px 29px -12px rgba(15, 15, 15, 1);
+  -moz-box-shadow: 20px 15px 29px -12px rgba(15, 15, 15, 1);
+  box-shadow: 20px 15px 29px -12px rgba(15, 15, 15, 1);
+  background-color: rgba(218, 215, 215, 0.664);
+}
+.img-categoria {
+  width: 50%;
+  justify-content: center;
+}
+.texto-categoria {
+  color: #070707;
+}
+.contenedor-categoria:hover {
+  transform: scale(1.2); /* aumenta el tamaño del contenedor */
+  opacity: 0.8; /* disminuye la opacidad del contenedor */
+  transition: all 0.3s ease-in-out; /* agrega una animación suave */
+}
