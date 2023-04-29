@@ -1,9 +1,9 @@
 import React from "react";
-import "../Componentes/Fotos.css";
-import Cafetera1 from "../assets/img/Cafetera1-1.png"
-import Cafetera2 from "../assets/img/Cafetera2-2.png"
-import Reloj from "../assets/img/Reloj-1.png"
-import Celular from "../assets/img/Celular-1.png";
+import "./Fotos.css";
+import Cafetera1 from "../../assets/img/Cafetera1-1.png"
+import Cafetera2 from "../../assets/img/Cafetera2-2.png"
+import Reloj from "../../assets/img/Reloj-1.png"
+import Celular from "../../assets/img/Celular-1.png";
 
 const infoFotos=[
     {id:1, linkFoto: Reloj, textoDescriptivo:"Reloj"},

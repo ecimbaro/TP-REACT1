@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import ListaProductos from "./components/cards/ListaProductos";
+// import ListaProductos from "./components/cards/ListaProductos";
 import Footer from "./components/Footer/Footer";
 import Carousel from "./components/carrousel/Carousel";
 import{ Navbar }from './components/Navbar/Navbar'
@@ -10,7 +10,7 @@ import CarouselOfertas from "./components/ofertas/CarouselOfertas";
 // import ProductosProvider from "./components/context/ContextProducts";
 import Categorias from "./components/categorias/Categorias";
 import Carrito from "./components/Carrito/Carrito";
-
+import Instagram from './components/Instagram/Instagram'
 
 const App = () => {
   return (  
@@ -22,6 +22,7 @@ const App = () => {
       {/* <Categorias/> */}
       {/* <ListaProductos /> */}
       <Redes />
+      <Instagram/>
       <Footer />
       </div>
   

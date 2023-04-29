@@ -1,6 +1,6 @@
 import React from "react";
-import "../Componentes/Instagram.css";
-import Fotos from "./Fotos";
+import "./Instagram.css";
+import Fotos from "../Fotos/Fotos";
 
 
 
