@@ -11,7 +11,7 @@ import Instagram from './components/Instagram/Instagram'
 // import ProductosProvider from "./components/context/ContextProducts";
 import Categorias from "./components/categorias/Categorias";
 import Carrito from "./components/Carrito/Carrito";
-import Instagram from './components/Instagram/Instagram'
+
 
 const App = () => {
   return (  
