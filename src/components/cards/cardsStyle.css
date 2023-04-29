@@ -9,10 +9,11 @@
 .antes {
     font-size: 1em;
     text-decoration-line: line-through;
-    color: 3e5954;
+    color: #3e5954;
 }
 .oferta {
     font-size: 1.2em;
+    color: black
 }
 
  .descuento {
@@ -21,7 +22,7 @@
     padding: 0.2rem;
  }
  .btn-cards {
-    padding: 1.3em 3em;
+    padding: 1em 3em;
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 2.5px;
@@ -48,10 +49,12 @@
  }
 
 .img-product {
-    border-radius: 20px 20px 0px 0px;
-    /* object-fit: cover; */
-    line-height: 50%;
+    line-height: auto;
     width: 50%;
+    object-fit: cover;
+    padding: 0.4em;
+    
+   
 }
 .carousel-indicators li {
     border-radius: 50%;
@@ -60,3 +63,9 @@
     background-color: black;
     margin: 0 8px;
   }
+.prod-nombre {
+    font-size: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
