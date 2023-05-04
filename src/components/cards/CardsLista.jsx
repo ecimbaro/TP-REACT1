@@ -13,7 +13,7 @@ const CardsLista = ({ data, addToCart }) => {
       <Carousel interval={null} variant="dark" indicators={true}>
         <Carousel.Item>
           <Card.Img
-            className="d-block w-100 pt-1 img-product"
+            className="d-block w-100 img-fluid pt-1 img-product"
             src={imagen.imgPrincipal}
             alt="First slide"
           />
@@ -21,7 +21,7 @@ const CardsLista = ({ data, addToCart }) => {
 
         <Carousel.Item>
           <Card.Img
-            className="d-block w-100  img-product"
+            className="d-block w-100 img-fluid img-product"
             src={imagen.img1}
             alt="Second slide"
           />
@@ -29,7 +29,7 @@ const CardsLista = ({ data, addToCart }) => {
 
         <Carousel.Item>
           <Card.Img
-            className="d-block w-100  img-product"
+            className="d-block w-100 img-fluid img-product"
             src={imagen.img2}
             alt="Third slide"
           />
