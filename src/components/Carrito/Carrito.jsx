@@ -10,10 +10,10 @@ import Item from "./Item";
 const Carrito = () => {
   //hook useReducer: función reductora + estado inicial
   const [state, dispatch] = useReducer(carritoReducer, carritoInitialState);
-//destructurar initial state (esto tengo en mi estado inicial)
+  //destructurar initial state (esto tengo en mi estado inicial)
   const { productos, carrito } = state;
 
-//funciones con las que voy a despachar las acciones 
+  //funciones con las que voy a despachar las acciones
   const updateState = async () => {
     const productosURL = "http://localhost:3000/products";
     const cartURL = "http://localhost:3000/carrito";
@@ -52,22 +52,26 @@ const Carrito = () => {
     <div>
       {/* aca va lo que se va a ver en la pagina, los productos disponibles y los que agregue al carrito */}
       <div className="Container">
-      <h1 className="oferta-tiempo">TODOS LOS PRODUCTOS</h1>
-      <Row sm={1} md={2} lg={3} xl={4}
-        className="g-4 justify-content-center  pb-4 pt-3">
-        {productos.map((producto) => (
-          <Col>
-             <CardsLista
-            key={producto.id}
-            data={producto}
-            addToCart={addToCart}
-          />
-          </Col>
-        ))}
-      </Row>
-    </div>
+        <h1 className="oferta-tiempo">TODOS LOS PRODUCTOS</h1>
+        <Row
+          sm={1}
+          md={2}
+          lg={3}
+          xl={4}
+          className="g-4 justify-content-center  pb-4 pt-3"
+        >
+          {productos.map((producto) => (
+            <Col>
+              <CardsLista
+                key={producto.id}
+                data={producto}
+                addToCart={addToCart}
+              />
+            </Col>
+          ))}
+        </Row>
+      </div>
 
-      
       <h2>Carrito</h2>
       <div>
         {carrito.map((item) => (
