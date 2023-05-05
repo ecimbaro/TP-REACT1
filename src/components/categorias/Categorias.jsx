@@ -1,6 +1,9 @@
 import React,{useState,useEffect} from "react";
 import Card from "react-bootstrap/Card";
 import "./categorias.css";
+import smartphones from "./imgsCategorias/smartphones.png";
+import relojes from "./imgsCategorias/relojes.png";
+import cafetera from "./imgsCategorias/cafetera.png";
 import smartphones from './imgsCategorias/smartphones.png'
 import relojes from './imgsCategorias/relojes.png'
 import cafetera from './imgsCategorias/cafetera.png'
@@ -13,6 +16,7 @@ const Categorias = () => {
     setClick(true)
   }
   return (
+
     
     <div className="categorias mt- 3 mb-3">
       {click ? <h2>Hizo click</h2> : <h2>a ver q onda</h2> }

@@ -1,4 +1,4 @@
-import React, {useState, useReducer, useEffect } from "react";
+import React, { useState, useReducer, useEffect } from "react";
 import { TYPES } from "./action";
 import { carritoInitialState, carritoReducer } from "./CarritoReducer";
 import axios from "axios";
@@ -7,13 +7,14 @@ import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Item from "./Item";
 
-
 const Carrito = () => {
   //hook useReducer: función reductora + estado inicial
   const [state, dispatch] = useReducer(carritoReducer, carritoInitialState);
   //destructurar initial state (esto tengo en mi estado inicial)
+  //destructurar initial state (esto tengo en mi estado inicial)
   const { productos, carrito } = state;
 
+  //funciones con las que voy a despachar las acciones
   //funciones con las que voy a despachar las acciones
   const updateState = async () => {
     const productosURL = "http://localhost:3000/products";
@@ -35,19 +36,16 @@ const Carrito = () => {
   const addToCart = (id) => {
     //del objeto TYPES la funcion que quiero
     dispatch({ type: TYPES.ADD_TO_CART, payload: id });
-  
   };
 
- //Borrar removeAll true
- const deleteFromCart = (id, removeAll) => {
-  if (removeAll === true) {
-    dispatch({ type: TYPES.REMOVE_ALL_ITEMS, payload: id });
-  } else {
-    dispatch({ type: TYPES.REMOVE_ITEM, payload: id });
-  }
-
-};
-
+  //Borrar removeAll true
+  const deleteFromCart = (id, removeAll) => {
+    if (removeAll === true) {
+      dispatch({ type: TYPES.REMOVE_ALL_ITEMS, payload: id });
+    } else {
+      dispatch({ type: TYPES.REMOVE_ITEM, payload: id });
+    }
+  };
 
   //vaciar carrito
   const clearCart = () => dispatch({ type: TYPES.CLEAR_CART });
@@ -57,7 +55,7 @@ const Carrito = () => {
       {/* aca va lo que se va a ver en la pagina, los productos disponibles y los que agregue al carrito */}
       <div className="Container">
         <h1 className="oferta-tiempo">TODOS LOS PRODUCTOS</h1>
-      
+
         <Row
           sm={1}
           md={2}
@@ -73,12 +71,11 @@ const Carrito = () => {
         </Row>
       </div>
 
-      <h2>carrito</h2>
-      <div>
-        {carrito.map((item) => (
-          <Item key={item.id} data={item} deleteFromCart={deleteFromCart} />
-        ))}
-      </div>
+      <h2>Carrito</h2>
+
+      {carrito.map((item) => (
+        <Item key={item.id} data={item} deleteFromCart={deleteFromCart} />
+      ))}
 
       <button onClick={() => clearCart()} className="btn btn-warning btn-sm">
         Limpiar Carrito

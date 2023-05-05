@@ -2,19 +2,18 @@ import React from "react";
 import "./Instagram.css";
 import Fotos from "../Fotos/Fotos";
 
+function Instagram(props) {
+  return (
+    <>
+      <div className="contenedora">
+        <h1 className="Ig">Ingresá a nuestro instagram: @ReactTech-2023</h1>
 
-
-
-function Instagram(props){return(
-<>
-<div className="contenedora">
-    <h1 className="Ig">Ingresá a nuestro instagram: @ReactTech-2023</h1>
-    
-    <div> <Fotos></Fotos>
-    </div>
-</div>
-
-
-
-</>)}
-export default Instagram
+        <div>
+          {" "}
+          <Fotos></Fotos>
+        </div>
+      </div>
+    </>
+  );
+}
+export default Instagram;
