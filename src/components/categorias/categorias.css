@@ -2,11 +2,13 @@
   display: flex;
   justify-content: space-evenly;
   height: 12rem;
+
   
 }
 .contenedor-categoria {
   display: flex;
-  width: 15em;
+  width: auto;
+  margin: 1%;
   max-height: 12em;
   border-radius: 25px;
   border: none;

@@ -4,29 +4,32 @@ import "bootstrap/dist/css/bootstrap.min.css";
 // import ListaProductos from "./components/cards/ListaProductos";
 import Footer from "./components/Footer/Footer";
 import Carousel from "./components/carrousel/Carousel";
-import{ Navbar }from './components/Navbar/Navbar'
+import { Navbar } from "./components/Navbar/Navbar";
 import Redes from "./components/carrousel/Redes";
 import CarouselOfertas from "./components/ofertas/CarouselOfertas";
-import Instagram from './components/Instagram/Instagram'
+import Instagram from "./components/Instagram/Instagram";
 // import ProductosProvider from "./components/context/ContextProducts";
 import Categorias from "./components/categorias/Categorias";
 import Carrito from "./components/Carrito/Carrito";
+import Portada from "./components/Home/Portada";
 
 
 const App = () => {
-  return (  
+  return (
     <div className="container">
-      <Navbar/>
+   
+      <Navbar />
+    <Portada/>
       <Carousel />
       <CarouselOfertas />
-      <Carrito/>
-      {/* <Categorias/> */}
+      <Categorias />
+      <Carrito />
       {/* <ListaProductos /> */}
       <Redes />
-      <Instagram/>
+      <Instagram />
       <Footer />
-      </div>
-  
+    
+    </div>
   );
 };
 

@@ -6,55 +6,49 @@ import "./cardsStyle.css";
 //paso por prop data y funciones
 const CardsLista = ({ data, addToCart }) => {
   //destructuracion de props
-  const { id, imagen, nombre, precioAntes, descuento, precio } = data;
+  const { id, imagenes, nombre, precioAntes, descuento, precio } = data;
 
   return (
     <Card className="contenedor-productos" style={{ width: "17rem" }}>
-      <Carousel interval={null} variant="dark" indicators={true}>
+          <Carousel interval={null} variant="dark" indicators={true}>
         <Carousel.Item>
-          <Card.Img
+          <img
             className="d-block w-100 pt-1 img-product"
-            src={imagen.imgPrincipal}
+            src={imagenes.imgPrincipal}
             alt="First slide"
           />
         </Carousel.Item>
 
         <Carousel.Item>
-          <Card.Img
+          <img
             className="d-block w-100  img-product"
-            src={imagen.img1}
+            src={imagenes.img1}
             alt="Second slide"
           />
         </Carousel.Item>
 
         <Carousel.Item>
-          <Card.Img
+          <img
             className="d-block w-100  img-product"
-            src={imagen.img2}
+            src={imagenes.img2}
             alt="Third slide"
           />
         </Carousel.Item>
+  
       </Carousel>
+
+
       <Card.Body>
         <Card.Title className="text-center prod-nombre">{nombre}</Card.Title>
         <Card.Text className="text-center">
           <div>
             <span className="antes"> ${precioAntes} </span>
             <span className="descuento"> {descuento} </span>
-          </div>
-          <div>
-            {" "}
-            <span className="fw-bold oferta"> ${precio} </span>{" "}
+            <p className="fw-bold oferta"> ${precio} </p>
           </div>
         </Card.Text>
-        <div className="text-center">
-          <button
-            className="btn btn-cards w-100"
-            onClick={() => addToCart(id)}
-          >
-            Comprar
-          </button>
-        </div>
+          <button className="btn btn-cards w-100" onClick={() => addToCart(id)}> Comprar </button>
+    
       </Card.Body>
     </Card>
   );
