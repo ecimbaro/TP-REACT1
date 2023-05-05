@@ -1,18 +1,17 @@
-import React from "react";
+import React, {useContext} from "react";
 import Card from "react-bootstrap/Card";
 import Carousel from "react-bootstrap/Carousel";
 import "./cardsStyle.css";
-
+import { ProductosContext } from "../Contexto/ContextProducts";
 //paso por prop data y funciones
-const CardsLista = ({ data, addToCart }) => {
-  //destructuracion de props
-  const { id, imagenes, nombre, precioAntes, descuento, precio } = data;
-
+const CardsLista = ({data}) => {
+  const {addToCart} = useContext(ProductosContext);
+  const { id, nombre, precio, precioAntes, descuento, imagenes } = data ?? {};
   return (
-    <Card className="contenedor-productos" style={{ width: "17rem" }}>
+    <Card className="contenedor-productos" style={{ width: "15rem" }}>
           <Carousel interval={null} variant="dark" indicators={true}>
         <Carousel.Item>
-          <Card.Img
+          <img
             className="d-block w-100 pt-1 img-product"
             src={imagenes.imgPrincipal}
             alt="First slide"
@@ -20,7 +19,7 @@ const CardsLista = ({ data, addToCart }) => {
         </Carousel.Item>
 
         <Carousel.Item>
-          <Card.Img
+          <img
             className="d-block w-100  img-product"
             src={imagenes.img1}
             alt="Second slide"
@@ -28,7 +27,7 @@ const CardsLista = ({ data, addToCart }) => {
         </Carousel.Item>
 
         <Carousel.Item>
-          <Card.Img
+          <img
             className="d-block w-100  img-product"
             src={imagenes.img2}
             alt="Third slide"
@@ -44,7 +43,7 @@ const CardsLista = ({ data, addToCart }) => {
           <div>
             <span className="antes"> ${precioAntes} </span>
             <span className="descuento"> {descuento} </span>
-            <p className="fw-bold oferta"> ${precio} </p>
+            <div className="fw-bold oferta"> ${precio} </div>
           </div>
         </Card.Text>
           <button className="btn btn-cards w-100" onClick={() => addToCart(id)}> Comprar </button>

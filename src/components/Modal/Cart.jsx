@@ -1,6 +1,6 @@
 import React from "react";
 import CartModal from "./CartModal";
-import Item from "./Item";
+import Item from "../Carrito/Item";
 import { RiShoppingCartLine } from "react-icons/ri";
 
 const Cart = (props) => {

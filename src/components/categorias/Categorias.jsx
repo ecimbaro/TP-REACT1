@@ -1,43 +1,42 @@
-import React,{useState,useEffect} from "react";
+import React, { useState,useContext } from "react";
 import Card from "react-bootstrap/Card";
 import "./categorias.css";
-import smartphones from "./imgsCategorias/smartphones.png";
-import relojes from "./imgsCategorias/relojes.png";
-import cafetera from "./imgsCategorias/cafetera.png";
 import smartphones from './imgsCategorias/smartphones.png'
 import relojes from './imgsCategorias/relojes.png'
 import cafetera from './imgsCategorias/cafetera.png'
-import { faHourglass2 } from "@fortawesome/free-solid-svg-icons";
+import ProductosCategoria from "./ProductosCategoria";
+import { ProductosContext } from "../Contexto/ContextProducts";
 
 const Categorias = () => {
+  const {productos}= useContext(ProductosContext);
+  const [categoriaSeleccionada, setCategoriaSeleccionada] = useState(null);
 
-  const [click, setClick] = useState(false)
-  const seleccionarCategoria = () => {
-    setClick(true)
-  }
+  const seleccionarCategoria = (categoria) => {
+    setCategoriaSeleccionada(categoria);
+  };
+
   return (
-
-    
-    <div className="categorias mt- 3 mb-3">
-      {click ? <h2>Hizo click</h2> : <h2>a ver q onda</h2> }
-    <Card className="Container d-flex justify-content-center contenedor-categoria"
-    onClick={() => seleccionarCategoria("smartphones")}>
-      <h5 className="text-center texto-categoria"> Smarthphones </h5>
-      <img className="img-categoria d-block mx-auto" src={smartphones} alt="smarthphones" />
-    </Card>
-    <Card className="Container d-flex justify-content-center contenedor-categoria"
-    onClick={() => seleccionarCategoria("smart watch")}>
-      <h5 className="text-center texto-categoria"> Smart Watch </h5>
-      <img className="img-categoria d-block mx-auto" src={relojes} alt="smarth watch" />
-    </Card>
-    <Card className="Container d-flex justify-content-center contenedor-categoria"
-     onClick={() => seleccionarCategoria("cafeteras")}>
-      <h5 className="text-center texto-categoria"> Cafeteras </h5>
-      <img className="img-categoria d-block mx-auto" src={cafetera} alt="cafeteras" />
-    </Card>
-   </div>
-
+    <div className="categorias container-fluid py-2">
+      <Card className="my-3 contenedor-categoria" onClick={() => seleccionarCategoria("Smartphones")}>
+        <h5 className="texto-categoria"> SMARTHPHONES </h5>
+        <img className="img-categoria" src={smartphones} alt="Smarthphones" />
+      </Card>
+      <Card className="my-3 contenedor-categoria" onClick={() => seleccionarCategoria("Smart watch")}>
+        <h5 className="texto-categoria"> SMART WATCH </h5>
+        <img className="img-categoria" src={relojes} alt="Smarth watch" />
+      </Card>
+      <Card className="my-3 contenedor-categoria" onClick={() => seleccionarCategoria("Cafeteras")}>
+        <h5 className="texto-categoria"> CAFETERAS </h5>
+        <img className="img-categoria" src={cafetera} alt="Cafeteras" />
+      </Card>
+      <h5 className={`p-2 my-3 text-center  ${categoriaSeleccionada ? 'fondo-categoria' : 'none'}`}>{categoriaSeleccionada}</h5>
+     
+      {/* verifica si categoriaSeleccionada es verdadera antes de renderizar el componente ProductosCategoria. 
+      Si categoriaSeleccionada es falsa, entonces el componente no se renderiza. */}
+      {categoriaSeleccionada && <ProductosCategoria categoria={categoriaSeleccionada} />}
+    </div>
   );
 };
 
 export default Categorias;
+

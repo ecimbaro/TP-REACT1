@@ -1,18 +1,6 @@
 /* texto arriba */
 .oferta-tiempo {
-  background: #0f2027; 
-  background: -webkit-linear-gradient(
-    to right,
-    #2c5364,
-    #203a43,
-    #0f2027
-  ); 
-  background: linear-gradient(
-    to right,
-    #2c5364,
-    #203a43,
-    #0f2027
-  );
+  background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
   width: 100%;
   color: rgb(255, 255, 255);
   font-size: 2.5rem;
@@ -20,29 +8,26 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 2% 0;
+  margin: 1% 0;
 }
 /*contenedor de todo*/
 .container-ofertas {
   padding: 3rem 0;
-
 }
 /*cards*/
 .item {
-  /* max-width: 100%; */
   margin: auto;
   text-align: center;
-  padding: 0.5rem;
+  padding: 0.7rem;
 }
 .card-oferta {
-  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
-  box-shadow: 0px 0px 5px 1px rgb(63, 63, 63);
+  border: none;
+  box-shadow: 0px 0px 5px 1px rgb(109, 108, 108);
   max-width: 15rem;
   margin: auto 1rem;
   text-align: center;
-
 }
-
+/*TEXTO*/
 .texto-ofertaCarousel {
   color: white;
   font-size: 1.3rem;
@@ -52,12 +37,13 @@
   font-size: 1rem;
   white-space: nowrap;
 }
-
+/*img*/
 .product-image {
   width: 100%;
   height: 16em;
   object-fit: cover;
 }
+/*boton*/
 .btn-oferta {
   border: none;
   outline: 0;

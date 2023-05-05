@@ -1,0 +1,48 @@
+/*Fondo*/
+.home {
+  background-image: url(./img.home.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 75vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+}
+/*Imagen*/
+.img-home {
+  justify-content: center;
+}
+.img-celu {
+  width: 100%;
+  transition: transform 0.2s ease-in-out;
+}
+.img-celu:hover {
+  transform: scale(1.2);
+}
+
+/*texto*/
+.titulo-home {
+  font-size: 4rem;
+}
+.home-texto {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: 1.5rem;
+}
+.btn-home {
+  font-size: 1.2em;
+}
+
+/*medias queryes*/
+@media (max-width: 768px) {
+    .home {
+      height: 40vh;
+    }
+    .titulo-home {
+      font-size: 2.2rem;
+    }
+  }

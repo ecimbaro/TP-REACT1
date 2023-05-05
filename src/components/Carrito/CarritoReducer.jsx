@@ -1,10 +1,4 @@
-import { TYPES } from "./action";
-
-// estado inicial que va a usar el reducer productos "disponibles" y carrito vacio
-export const carritoInitialState = {
-  productos: [],
-  carrito: [],
-};
+import { TYPES } from './action'
 
 
 // Casos que definimos en TYPES
@@ -21,18 +15,18 @@ export function carritoReducer(state, action) {
     case TYPES.ADD_TO_CART: {
       //busca si hay un producto para agregar
       let nuevoItem = state.productos.find(
-        (producto) => producto.id === action.payload
+        producto => producto.id === action.payload
       );
       //console.log(nuevoItem)
 
       let itemEnCarrito = state.carrito.find(
-        (item) => item.id === action.payload
+        item => item.id === action.payload
       );
       //si ya existe el item le suma 1
       return itemEnCarrito
         ? {
             ...state,
-            carrito: state.carrito.map((item) =>
+            carrito: state.carrito.map(item =>
               item.id === nuevoItem.id
                 ? { ...item, cantidad: item.cantidad + 1 }
                 : item
