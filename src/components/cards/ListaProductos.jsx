@@ -1,12 +1,9 @@
-import React, { useReducer, useEffect } from "react";
-import { TYPES } from "./CartReducer/CartActions";
-import axios from "axios";
-import Item from "./Item";
-import { carritoInitialState, carritoReducer } from "./CartReducer/CartReducer";
-import Cards from "./Cards";
-import Cart from "./Cart";
-import Col from "react-bootstrap/esm/Col";
-import Row from "react-bootstrap/esm/Row";
+// import { useContext, useState,useEffect } from "react";
+// import CardsLista from "./CardsLista";
+// import Col from "react-bootstrap/Col";
+// import Row from "react-bootstrap/Row";
+// import { ProductosContext } from "../context/ContextProducts";
+// import axios from "axios";
 
 const Carrito = () => {
   const [state, dispatch] = useReducer(carritoReducer, carritoInitialState);

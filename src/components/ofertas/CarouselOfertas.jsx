@@ -3,7 +3,7 @@ import "./ofertas.css";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { responsive } from "./breakpoints";
-import { ProductosContext } from "../context/ContextProducts";
+// import { ProductosContext } from "../context/ContextProducts";
 import axios from "axios";
 
 
@@ -36,13 +36,13 @@ import axios from "axios";
     <div key={index} className="card-oferta">
       <img
         className=" product-img w-100"
-        src={producto.imagen.imgPrincipal}
+        src={producto.imagenes.imgPrincipal}
         alt={producto.nombre} />
       <p className="texto-ofertaCarousel nombre">{producto.nombre}</p>
       <p className="texto-ofertaCarousel fw-bold">
         OFERTA $ {producto.precio}
       </p>
-      <button className="btn-oferta">Comprar</button>
+      <button className="btn-oferta" >Comprar</button>
     </div>
   ));
   
