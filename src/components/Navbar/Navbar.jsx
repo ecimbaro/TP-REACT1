@@ -1,59 +1,53 @@
-import Button from "react-bootstrap/Button";
+import { RiShoppingCartLine } from "react-icons/ri";
+import { useContext,useState } from "react";
 import Container from "react-bootstrap/Container";
-import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
-import { RiShoppingCartLine } from 'react-icons/ri'
+import { Link } from "react-router-dom";
 import "./Navbar.css";
+import { ProductosContext } from "../Contexto/ContextProducts";
+import ModalCarrito from '../Modal/ModalCarrito'
 
-export function NavBar({}) {
+function BarraNav() {
+  const {carrito} = useContext(ProductosContext);
+
+  const [showModal, setShowModal] = useState(false);
+
+  const handleShowModal = () => {
+    setShowModal(true);
+  }
+
   return (
-    <Navbar className="NavBar" expand="lg">
-      <Container fluid>
-        <Navbar.Brand href="#">Mi Tienda</Navbar.Brand>
-        <Navbar.Toggle aria-controls="navbarScroll" />
-        <Navbar.Collapse id="navbarScroll">
-          <Nav
-            className="me-auto my-2 my-lg-0"
-            style={{ maxHeight: "100px" }}
-            navbarScroll
-          >
-            <NavDropdown
-              className="me-5"
-              title="Categorias "
-              id="navbarScrollingDropdown"
-            >
-              <NavDropdown.Item href="#">Celulares</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#">Camaras y Accesorios</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#">Computacion</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#">
-                Electronica, audio y video
-              </NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#">
-                Consolas y Videojuegos
-              </NavDropdown.Item>
-            </NavDropdown>
-
-            <Nav.Link href="#">Home</Nav.Link>
-            <Nav.Link href="#"><RiShoppingCartLine/></Nav.Link>
-            
+    <>
+    <Navbar className="barra-nav" collapseOnSelect expand="lg" variant="dark">
+      <Container>
+        <Navbar.Brand as={Link} to="/">
+          React-Tech
+        </Navbar.Brand>
+        {/* <Navbar.Brand className="icono-carrito" as={Link} to="/Cart"   onClick={handleShowModal}>
+          <RiShoppingCartLine />  ({carrito.length})
+        </Navbar.Brand> */}
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="me-auto">
+            <Nav.Link as={Link} to="/Carrito">
+              Productos
+            </Nav.Link>
+            <Nav.Link as={Link} to="/Ofertas">
+              Ofertas </Nav.Link>
           </Nav>
-          <Form className="d-flex">
-            <Form.Control
-              type="search"
-              placeholder="Search"
-              className="me-1"
-              aria-label="Search"
-            />
-            <Button variant="outline-success">Search</Button>
-          </Form>
+          <Nav>
+            <Nav.Link as={Link} to="/Categorias">
+              Categorias
+            </Nav.Link>
+          </Nav>
         </Navbar.Collapse>
       </Container>
+      <ModalCarrito showModal={showModal} setShowModal={setShowModal} />
     </Navbar>
+    
+     </>
   );
 }
+
+export default BarraNav;

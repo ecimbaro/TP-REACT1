@@ -1,0 +1,23 @@
+.container-modal {
+    width: 90%;
+}
+.icono-carrito {
+    background-color:#03362c;
+    font-size: 1.5em;
+    border: #03362c;
+}
+.limpiar-carrito{
+     font-size: 1rem;
+     border: none;
+     border-radius: 5px;
+     padding: 1em;
+     background-color: #5e9188;
+}
+.produc-modal {
+    font-size: 1.2rem;
+}
+
+.borrar-uno, .borrar-todos {
+    background-color: #439182;
+    border: none;
+}

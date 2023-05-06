@@ -12,22 +12,22 @@ export const carritoEstadoInicial = {
   };
   
 export const ProductosProvider = (props) => {
-  const [state, dispatch] = useReducer(carritoReducer, carritoInitialState);
+  const [state, dispatch] = useReducer(carritoReducer, carritoEstadoInicial);
 
   const updateState = async () => {
     try {
       const productosURL = "http://localhost:3000/products";
-      const cartURL = "http://localhost:3000/carrito";
+      const carritotURL = "http://localhost:3000/carrito";
       //Promise.all para hacer las dos solicitudes a la vez y obtener las respuestas de forma paralela.
       //Esto puede mejorar el tiempo de carga en el caso de que las solicitudes sean lentas o se realicen en un servidor remoto.
-      const [resProductos, resCart] = await Promise.all([
+      const [resProductos, resCarrito] = await Promise.all([
         axios.get(productosURL),
-        axios.get(cartURL),
+        axios.get(carritotURL),
       ]);
   
       const [newProduct, newCartItem] = await Promise.all([
         resProductos.data,
-        resCart.data,
+        resCarrito.data,
       ]);
   
       dispatch({ type: TYPES.READ_STATE, payload: [newProduct, newCartItem] });

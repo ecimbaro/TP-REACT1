@@ -1,5 +1,4 @@
 import React, {useContext} from "react";
-import Card from "react-bootstrap/Card";
 import Carousel from "react-bootstrap/Carousel";
 import "./cardsStyle.css";
 import { ProductosContext } from "../Contexto/ContextProducts";
@@ -9,7 +8,7 @@ const CardsLista = ({data}) => {
   const { id, nombre, precio, precioAntes, descuento, imagenes } = data ?? {};
   return (
     <div className="contenedor-productos" style={{ width: "15rem" }}>
-          <Carousel interval={null} variant="dark" indicators={true}>
+          <Carousel interval={null} variant="dark" indicators={false}>
         <Carousel.Item>
           <img
             className="d-block w-100 pt-1 img-product"

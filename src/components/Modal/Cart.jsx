@@ -1,11 +1,12 @@
-import React from "react";
+import React, {useContext} from "react";
 import CartModal from "./CartModal";
-import Item from "./Item";
+import Item from '../Carrito/Item'
 import { RiShoppingCartLine } from "react-icons/ri";
+import { ProductosContext } from "../Contexto/ContextProducts";
 
-const Cart = (props) => {
-  const { cart, deleteFromCart, clearCart } = props;
-
+const Cart = () => {
+  const {carrito,deleteFromCart, clearCart} =useContext(ProductosContext);
+  
   return (
     <div className="cart d-flex justify-content-center">
       <button
@@ -14,10 +15,10 @@ const Cart = (props) => {
         data-bs-toggle="modal"
         data-bs-target="#cartModal"
       >
-        <RiShoppingCartLine /> ({cart.length})
+        <RiShoppingCartLine /> ({carrito.length})
       </button>
       <CartModal>
-        {cart.map((item, index) => (
+        {carrito.map((item, index) => (
           <Item key={index} data={item} deleteFromCart={deleteFromCart} />
         ))}
         <button onClick={() => clearCart()} className="btn btn-warning btn-sm">

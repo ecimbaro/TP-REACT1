@@ -6,11 +6,13 @@ import Redes from "../carrousel/Redes";
 import ProductosProvider from "../Contexto/ContextProducts";
 import Carrito from "../Carrito/Carrito";
 import CarouselOfertas  from '../ofertas/CarouselOfertas'
+// import Cart from "../Modal/Cart";
 
 const Home = () => {
   return (
     <div>
       <ProductosProvider>
+    
         <Portada />
         <Carousel />
         <Categorias />

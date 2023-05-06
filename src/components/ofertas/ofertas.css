@@ -11,19 +11,20 @@
   margin: 1% 0;
 }
 /*contenedor de todo*/
-.container-ofertas {
+/* .container-ofertas {
   padding: 3rem 0;
-}
+} */
 /*cards*/
 .item {
-  margin: auto;
+  margin: 0 auto;
   text-align: center;
   padding: 0.7rem;
+  width: 90%;
 }
 .card-oferta {
   border: none;
   box-shadow: 0px 0px 5px 1px rgb(109, 108, 108);
-  max-width: 15rem;
+  /* max-width: 15rem; */
   margin: auto 1rem;
   text-align: center;
 }
