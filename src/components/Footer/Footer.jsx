@@ -58,7 +58,7 @@ export const Footer = () => {
               <h5>Suscribete </h5>
               <p>Recibe Nuestras Ofertas</p>
               <div className="d-flex flex-column flex-sm-row w-100 gap-2">
-                <label for="newsletter1" class="visually-hidden">
+                <label forhtml="newsletter1" className="visually-hidden">
                   Email
                 </label>
                 <input

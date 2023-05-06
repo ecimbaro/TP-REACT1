@@ -3,25 +3,18 @@ import axios from "axios";
 import { TYPES } from "../Carrito/action";
 import { carritoReducer } from "../Carrito/CarritoReducer";
 
-//creo contexto vacio
+
 export const ProductosContext = createContext();
 
-//estado inicial que va a usar el reducer productos "disponibles" y carrito vacio
-export const carritoInitialState = {
+export const carritoEstadoInicial = {
     productos: [],
     carrito: [],
   };
   
 export const ProductosProvider = (props) => {
-  //hook useReducer: funciónes que estan en carritoReducer reductora + estado inicial
   const [state, dispatch] = useReducer(carritoReducer, carritoInitialState);
-  //destructurar initial state (esto tengo en mi estado inicial)
 
-  //funciones con las que voy a despachar las acciones
-
-  //updateState para obtener datos de dos endpoints diferentes y luego, mediante el uso de dispatch, actualiza el estado global de la aplicación con los datos obtenidos. 
   const updateState = async () => {
-   // Se utiliza un bloque try/catch para manejar errores en la ejecución de las solicitudes.
     try {
       const productosURL = "http://localhost:3000/products";
       const cartURL = "http://localhost:3000/carrito";
@@ -47,13 +40,11 @@ export const ProductosProvider = (props) => {
     updateState();
   }, []);
   
-  //agregar Producto
+
   const addToCart = (id) => {
-    //del objeto TYPES la funcion que quiero
     dispatch({ type: TYPES.ADD_TO_CART, payload: id });
   };
 
- //Borrar removeAll true
  const deleteFromCart = (id, removeAll) => {
   if (removeAll === true) {
     dispatch({ type: TYPES.REMOVE_ALL_ITEMS, payload: id });
@@ -62,7 +53,6 @@ export const ProductosProvider = (props) => {
   }
 };
 
-  //vaciar carrito
   const clearCart = () => dispatch({ type: TYPES.CLEAR_CART });
   return (
      <ProductosContext.Provider value={{productos: state.productos,

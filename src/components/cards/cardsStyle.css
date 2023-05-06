@@ -4,6 +4,7 @@
   box-shadow: 0px 0px 10px rgba(156, 161, 233, 0.555);
   border-radius: 20px;
   margin: auto;
+  height: 22rem;
 }
 /*texto*/
 .antes {
@@ -30,7 +31,8 @@
 
 /*boton*/
 .btn-cards {
-  padding: 1em 3em;
+  padding: 1em 2em;
+  width: 90%;
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 2.5px;

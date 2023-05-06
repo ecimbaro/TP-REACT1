@@ -5,19 +5,12 @@ import { Col, Row } from "react-bootstrap";
 
 const ProductosCategoria = ({categoria}) => {
   const { productos, addToCart} = useContext(ProductosContext);
-//   let totalProductos = 0;
-//   carrito.forEach(item => {
-//     totalProductos += item.cantidad;
-//   });
 
   const productosFiltrados = productos.filter((producto) => {
     return !categoria || producto.categoria === categoria;
   });
   
-  // const productosFiltrados = productos.filter((producto) => categoria ? producto.categoria === categoria : true);
 
-  
-  //Despues mapeo los productos de la categoria seleccionada
   return (
     <div>
     <div>

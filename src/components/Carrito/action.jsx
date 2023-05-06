@@ -5,4 +5,3 @@ export const TYPES = {
     REMOVE_ALL_ITEMS : "REMOVE_ALL_ITEMS",
     CLEAR_CART: "CLEAR_CART"
 }
-//todas las acciones que voy a tener

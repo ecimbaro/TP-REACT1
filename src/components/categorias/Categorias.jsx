@@ -31,8 +31,6 @@ const Categorias = () => {
       </Card>
       <h5 className={`p-2 my-3 text-center  ${categoriaSeleccionada ? 'fondo-categoria' : 'none'}`}>{categoriaSeleccionada}</h5>
      
-      {/* verifica si categoriaSeleccionada es verdadera antes de renderizar el componente ProductosCategoria. 
-      Si categoriaSeleccionada es falsa, entonces el componente no se renderiza. */}
       {categoriaSeleccionada && <ProductosCategoria categoria={categoriaSeleccionada} />}
     </div>
   );

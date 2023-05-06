@@ -9,10 +9,6 @@ import Item from "./Item";
 const Carrito = () => {
   const {productos, carrito , addToCart, deleteFromCart, clearCart } = useContext(ProductosContext);
 
-  let totalProductos = 0;
-  carrito.forEach(item => {
-    totalProductos += item.cantidad;
-  });
   return (
     <div className="Container">
       <div>
