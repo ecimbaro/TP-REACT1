@@ -7,7 +7,7 @@ import { ProductosContext } from "../Contexto/ContextProducts";
 import './modal.css'
 
 function ModalCarrito() {
-  const { carrito, deleteFromCart, clearCart } = useContext(ProductosContext);
+  const {carrito, deleteFromCart, clearCart } = useContext(ProductosContext);
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -45,7 +45,7 @@ function ModalCarrito() {
           <Button variant="primary" onClick={handleClose}>
             Comprar
           </Button>
-          <Button
+           <Button
             onClick={() => clearCart()}
             className="btn limpiar-carrito btn-sm"
           >

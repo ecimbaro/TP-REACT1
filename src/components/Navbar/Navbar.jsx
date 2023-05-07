@@ -10,7 +10,7 @@ import ModalCarrito from '../Modal/ModalCarrito'
 import { NavbarBrand } from "react-bootstrap";
 
 function BarraNav() {
-  const {carrito} = useContext(ProductosContext);
+  // const {carrito} = useContext(ProductosContext);
 
   const [showModal, setShowModal] = useState(false);
 
@@ -29,7 +29,7 @@ function BarraNav() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link as={Link} to="/Carrito">
+            <Nav.Link as={Link} to="/Productos">
               Productos
             </Nav.Link>
             <Nav.Link as={Link} to="/Ofertas">

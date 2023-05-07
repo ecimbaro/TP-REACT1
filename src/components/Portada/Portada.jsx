@@ -7,7 +7,7 @@ const Portada = () => {
       <div className="home-texto container-fluid">
         <h3 className="titulo-home fw-bold text-center"> REACT TECH </h3>
         <p className="text-center"> MES DE MAYO ENVIOS SIN CARGO </p>
-        <Link to="/carrito">
+        <Link to="/Productos">
           <Button variant="outline-light btn-home"> TIENDA </Button>
         </Link>
       </div>

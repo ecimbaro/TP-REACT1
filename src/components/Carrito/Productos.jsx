@@ -4,8 +4,8 @@ import CardsLista from "../cards/CardsLista";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 
-const Carrito = () => {
-  const {carrito, productos, addToCart} =useContext(ProductosContext);
+const Productos = () => {
+  const {productos, addToCart} =useContext(ProductosContext);
 
   return (
     <div className="Container">
@@ -27,4 +27,4 @@ const Carrito = () => {
   );
 };
 
-export default Carrito;
+export default Productos;
