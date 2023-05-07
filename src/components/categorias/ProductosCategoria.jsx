@@ -14,7 +14,7 @@ const ProductosCategoria = ({categoria}) => {
   return (
     <div>
     <div>
-      <Row  sm={2} md={2} lg={3} xl={4} >
+      <Row  sm={2} md={2} lg={3} xl={4} className="d-flex justify-content-center">
         {productosFiltrados.map((producto) => (
           <Col className="py-2" key={producto.id}>
             <CardsLista data={producto} addToCart={addToCart} />

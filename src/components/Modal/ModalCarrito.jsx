@@ -24,28 +24,32 @@ function ModalCarrito() {
         <RiShoppingCartLine /> {totalProductos}
       </Button>
 
-      <Modal show={show} onHide={handleClose}>
+      <Modal show={show} onHide={handleClose} centered
+      size="lg">
         <Modal.Header closeButton>
-          <Modal.Title> Carrito </Modal.Title>
+          <Modal.Title> Carrito de compras</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           {" "}
           {carrito.map((item, index) => (
             <Item key={index} data={item} deleteFromCart={deleteFromCart} />
           ))}
-          <button
-            onClick={() => clearCart()}
-            className="btn limpiar-carrito fw-bold btn-sm"
-          >
-            Limpiar Carrito
-          </button>
+         
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
-            Close
+        <Button variant="secondary" onClick={handleClose}>
+            Cerrar
           </Button>
+       
+         
           <Button variant="primary" onClick={handleClose}>
-            Ir a pagar
+            Comprar
+          </Button>
+          <Button
+            onClick={() => clearCart()}
+            className="btn limpiar-carrito btn-sm"
+          >
+            Vaciar Carrito
           </Button>
         </Modal.Footer>
       </Modal>

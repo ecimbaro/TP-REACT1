@@ -2,19 +2,18 @@ import React, { useContext } from "react";
 import "./ofertas.css";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import { renderButtonGroupOutside } from "react-multi-carousel";
 import { responsive } from "./breakpoints";
 import { ProductosContext } from "../Contexto/ContextProducts";
 
 function CarouselOfertas() {
-  const {productos, addToCart, carrito} = useContext(ProductosContext);
+  const {productos, addToCart} = useContext(ProductosContext);
 
   const productosFiltrados = productos.filter(
     (producto) => producto.nuevo === true
   );
 
   const items = productosFiltrados.map(({ id, nombre, precio, imagenes }) => (
-    <div key={id} className="card-oferta Container-fluid">
+    <div key={id} className="card-oferta">
       <img
         className="product-img w-100"
         src={imagenes.imgPrincipal}
@@ -29,7 +28,7 @@ function CarouselOfertas() {
   ));
 
   return (
-    <div className="container-ofertas Container">
+    <div className="container-ofertas">
       <h1 className="oferta-tiempo">OFERTAS DEL MES</h1>
 
       <Carousel

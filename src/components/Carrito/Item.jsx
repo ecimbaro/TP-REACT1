@@ -1,18 +1,36 @@
-import React, {useContext} from 'react';
-import { ProductosContext } from '../Contexto/ContextProducts';
+import React, { useContext } from "react";
+import { ProductosContext } from "../Contexto/ContextProducts";
+import { Row, Col, Button } from "react-bootstrap";
 
-const Item = ({data}) => {
-    const {deleteFromCart} = useContext(ProductosContext);
-    const { id, nombre, precio, cantidad } = data;
-    return (
-        <div className='col-md-12 d-flex flex-row justify-content-between'>
-            <h4 className='produc-modal'>{nombre}</h4>
-            <h5>$ {precio} x {cantidad}u</h5>
-            <h5>$ {precio * cantidad}</h5>
-            <button onClick={() => deleteFromCart(id, false)} className='btn borrar-uno btn-sm'>Eliminar uno</button>
-            <button onClick={() => deleteFromCart(id, true)} className='btn borrar-todos btn-sm'>Eliminar todos</button>
-        </div>
-    );
-}
+const Item = ({ data }) => {
+  const { deleteFromCart, addToCart } = useContext(ProductosContext);
+  const { id, nombreCorto, precio, cantidad } = data;
+  return (
+    <Row>
+      <Col>
+        <h4 className="texto-modal">{nombreCorto}</h4>
+      </Col>
+      <Col>
+        <h5 className="texto-modal">
+          $ {precio} x {cantidad}u
+        </h5>
+      </Col>
+
+      <Col>
+        <h5 className="texto-modal">$ {precio * cantidad}</h5>
+      </Col>
+
+      <Col className="d-flex justify-content-around aling-items-center">
+        <Button
+          onClick={() => deleteFromCart(id, false)}
+          className="borrar-uno btn-sm  d-flex align-items-center"> - </Button>
+        <h5 className="texto-modal">{cantidad} </h5>
+        <Button onClick={() => addToCart(id)} className="sumar-uno btn-sm  d-flex align-items-center">
+            +
+        </Button>
+      </Col>
+    </Row>
+  );
+};
 
 export default Item;

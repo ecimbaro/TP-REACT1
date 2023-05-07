@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import "./Navbar.css";
 import { ProductosContext } from "../Contexto/ContextProducts";
 import ModalCarrito from '../Modal/ModalCarrito'
+import { NavbarBrand } from "react-bootstrap";
 
 function BarraNav() {
   const {carrito} = useContext(ProductosContext);
@@ -24,9 +25,7 @@ function BarraNav() {
         <Navbar.Brand as={Link} to="/">
           React-Tech
         </Navbar.Brand>
-        {/* <Navbar.Brand className="icono-carrito" as={Link} to="/Cart"   onClick={handleShowModal}>
-          <RiShoppingCartLine />  ({carrito.length})
-        </Navbar.Brand> */}
+        <NavbarBrand><ModalCarrito className="carrito-btn" showModal={showModal} setShowModal={setShowModal} /></NavbarBrand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
@@ -35,15 +34,16 @@ function BarraNav() {
             </Nav.Link>
             <Nav.Link as={Link} to="/Ofertas">
               Ofertas </Nav.Link>
-          </Nav>
-          <Nav>
-            <Nav.Link as={Link} to="/Categorias">
+              <Nav.Link as={Link} to="/Categorias">
               Categorias
             </Nav.Link>
           </Nav>
+        
         </Navbar.Collapse>
       </Container>
-      <ModalCarrito showModal={showModal} setShowModal={setShowModal} />
+    
+      
+      
     </Navbar>
     
      </>
