@@ -1,0 +1,54 @@
+
+.container{
+  box-sizing: border-box;
+  width: 350px;
+  height: 300px;
+  background: linear-gradient( white,#607d9d);
+  display: flex;
+}
+
+.active{
+  display: flex;
+  box-sizing: content-box;
+}
+
+.carousel-control-prev{
+  width: 20px;
+  margin: auto;
+  background-color: black;
+}
+.carousel-control-prev-icon{
+  margin: auto;
+  display: inline-block;
+ 
+}
+
+.carousel-control-next{
+  width: 20px;
+  background-color: black;
+ }
+
+.carousel-control-next-icon{
+  width: 20px;
+ margin: auto;
+}
+
+
+h1{
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  color: black;
+}
+.img-fluid{
+margin:0 auto;
+display: inline-block;
+}
+
+
+.carousel-inner{
+  margin: auto;
+  display: inline-block;
+}
+
+
