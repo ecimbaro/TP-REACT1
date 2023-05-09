@@ -1,6 +1,6 @@
 /*contenedor*/
 .contenedor-productos {
-  background: #fff;
+  background-color: #fff;
   box-shadow: 0px 0px 10px rgba(156, 161, 233, 0.555);
   border-radius: 20px;
   margin: auto;
@@ -70,4 +70,12 @@
   height: 12px;
   background-color: black;
   margin: 0 8px;
+}
+.alert {
+  width: 70%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
 }

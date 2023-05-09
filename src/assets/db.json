@@ -1,7 +1,7 @@
 {
     "products": [
       {
-        "id": 1,
+        "id":1,
         "nuevo" : true,
         "nombre": "Samsung Z Flip4 256GB/8gb",
         "nombreCorto":"Samsung Z Flip4",
@@ -17,7 +17,7 @@
         }
       },
       {
-        "id": 2,
+        "id":2,
         "nuevo": false,
         "nombre": "Samsung Galaxy S22 128/8GB",
         "nombreCorto": "Samsung Galaxy S22",
@@ -33,7 +33,7 @@
         }
       },
       {
-        "id": 3,
+        "id":3,
         "nuevo": false,
         "nombre": "Samsung Galaxy A23 128/4GB",
         "nombreCorto": "Samsung Galaxy A23",
@@ -49,7 +49,7 @@
         }
       },
       {
-        "id": 4,
+        "id":4,
         "nuevo": true,
         "nombre": "Motorola G42 128GB",
         "nombreCorto": "Motorola G42",
@@ -65,7 +65,7 @@
         }
       },
       {
-        "id": 5,
+        "id":5,
         "nuevo": false,
         "nombre": "Motorola E32 4GB 64GB",
         "nombreCorto": "Motorola E32",
@@ -81,7 +81,7 @@
         }
       },
       {
-        "id": 6,
+        "id":6,
         "nuevo": false,
         "nombre": "Motorola G22 4gb 128gb",
         "nombreCorto": "Motorola G22",
@@ -97,7 +97,7 @@
         }
       },
       {
-        "id": 7,
+        "id":7,
         "nuevo": false,
         "nombre": "Smartwatch Mobvoi TicWatch E3",
         "nombreCorto": "Mobvoi TicWatch E3",
@@ -113,7 +113,7 @@
         }
       },
       {
-        "id": 8,
+        "id":8,
         "nuevo": false,
         "nombre": "Smartwatch Amazfit Band 5",
         "nombreCorto":" Amazfit Band 5",
@@ -129,7 +129,7 @@
         }
       },
       {
-        "id": 9,
+        "id":9,
         "nuevo": true,
         "nombre": "Smartwatch Haylou LS02",
         "nombreCorto": "Haylou LS02",
@@ -145,7 +145,7 @@
         }
       },
       {
-        "id": 10,
+        "id":10,
         "nuevo": false,
         "nombre": "Smartwatches Amazfit GTR 3",
         "nombreCorto": "Amazfit GTR 3",
@@ -161,7 +161,7 @@
         }
       },
       {
-        "id": 11,
+        "id":11,
         "nuevo": true,
         "nombre": "Smartwatch Xiaomi Mi Band 7",
         "nombreCorto": " Xiaomi Mi Band 7",
@@ -177,7 +177,7 @@
         }
       },
       {
-        "id": 12,
+        "id":12,
         "nuevo" : true,
         "nombre": "Smartwatch Xiaomi Mibro X1",
         "nombreCorto": "Xiaomi Mibro X1",
@@ -193,7 +193,7 @@
         }
       },
       {
-        "id": 13,
+        "id":13,
         "nuevo" : true,
         "nombre": "Dolce Gusto Piccolo XS",
         "nombreCorto": "Dolce Gusto Piccolo XS",
@@ -209,7 +209,7 @@
         }
       },
       {
-        "id": 14,
+        "id":14,
         "nuevo" : false,
         "nombre": "Moulinex Dolce Gusto mini",
         "nombreCorto": "Moulinex Dolce Gusto mini",
@@ -225,7 +225,7 @@
         }
       },
       {
-        "id": 15,
+        "id":15,
         "nuevo" : false,
         "nombre": "Cafetera Nespresso Essenza MiniD",
         "nombreCorto": "Nespresso Essenza MiniD",
@@ -241,7 +241,7 @@
         }
       },
       {
-        "id": 16,
+        "id":16,
         "nuevo" : true,
         "nombre": "Cafetera expresso Oster PrimaLatte",
         "nombreCorto": "Expresso Oster PrimaLatte",

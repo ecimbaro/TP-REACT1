@@ -10,17 +10,16 @@ export function carritoReducer(state, action) {
       };
     }
     case TYPES.ADD_TO_CART: {
-      let nuevoItem = state.productos.find(
-        (producto) => producto.id === action.payload
+      let nuevoItem = state.productos.find(producto => producto.id === action.payload
       );
 
       let itemEnCarrito = state.carrito.find(
-        (item) => item.id === action.payload
+        item => item.id === action.payload
       );
       return itemEnCarrito
         ? {
             ...state,
-            carrito: state.carrito.map((item) =>
+            carrito: state.carrito.map(item =>
               item.id === nuevoItem.id
                 ? { ...item, cantidad: item.cantidad + 1 }
                 : item
