@@ -3,10 +3,11 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 1fr);
+  width: 70%;
 }
 
 /*contendedor de cada card*/
-.contenedor-categoria {
+.contenedor-cat-individual {
   display: flex;
   width: 95%;
   flex-direction: row;
@@ -17,9 +18,9 @@
   -webkit-box-shadow: 20px 15px 29px -12px rgba(15, 15, 15, 1);
   -moz-box-shadow: 20px 15px 29px -12px rgba(15, 15, 15, 1);
   box-shadow: 20px 15px 29px -12px rgba(15, 15, 15, 1);
-  background-color: rgba(218, 215, 215, 0.534);
+  background-color: rgba(245, 241, 241, 0.425);
 }
-.contenedor-categoria:hover {
+.contenedor-cat-individual:hover {
   transform: scale(0.9);
   opacity: 0.8;
   transition: all 0.3s ease-in-out;

@@ -1,34 +1,53 @@
 import React, { useContext } from "react";
 import { ProductosContext } from "../Contexto/ContextProducts";
-import { Row, Col, Button } from "react-bootstrap";
+import { Row, Button } from "react-bootstrap";
+import "./item.css";
 
-const Item = ({ data }) => {
-  const { deleteFromCart, addToCart } = useContext(ProductosContext);
-  const { id, nombreCorto, precio, cantidad } = data;
+const Item = ({data}) => {
+  const {productos, deleteFromCart, addToCart } = useContext(ProductosContext);
+  const {id, nombre, precio,imagenes,cantidad, nombreCorto} = data;
   return (
-    <Row>
-      <Col>
+
+    <Row className="container flex-column flex-sm-row justify-content-center align-items-center w-100">
+
+      <div className="col-2 img-item">
+        <img
+          className="my-auto"
+          style={{ width: "3.5rem" }}
+          src={imagenes?.imgPrincipal}
+          alt={nombre}
+        />
+      </div>
+      <div className="col-3">
         <h4 className="texto-modal">{nombreCorto}</h4>
-      </Col>
-      <Col>
-        <h5 className="texto-modal">
-          $ {precio} x {cantidad}u
-        </h5>
-      </Col>
+      </div>
 
-      <Col>
-        <h5 className="texto-modal">$ {precio * cantidad}</h5>
-      </Col>
-
-      <Col className="d-flex justify-content-around aling-items-center">
+      <div className="col-3 d-flex justify-content-around align-items-center">
         <Button
           onClick={() => deleteFromCart(id, false)}
-          className="borrar-uno btn-sm  d-flex align-items-center"> - </Button>
-        <h5 className="texto-modal">{cantidad} </h5>
-        <Button onClick={() => addToCart(id)} className="sumar-uno btn-sm  d-flex align-items-center">
-            +
+          className="borrar-uno btn-sm d-flex align-items-center"
+        >
+          -
         </Button>
-      </Col>
+        <h5 className="texto-modal">{cantidad} </h5>
+        <Button
+          onClick={() => addToCart(id)}
+          className="sumar-uno btn-sm d-flex align-items-center"
+        >
+          +
+        </Button>
+      </div>
+      <div className="col-3 text-center">
+        <h5 className="texto-modal">$ {precio * cantidad}</h5>
+      </div>
+      <div className="col-1">
+        <button
+          className="borrar-todos"
+          onClick={() => deleteFromCart(data.id, true)}
+        >
+          x
+        </button>
+      </div>
     </Row>
   );
 };

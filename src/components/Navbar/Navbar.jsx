@@ -1,16 +1,14 @@
-import { RiShoppingCartLine } from "react-icons/ri";
-import { useContext,useState } from "react";
+import {useState, useContext } from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import { Link } from "react-router-dom";
+import { Link} from "react-router-dom";
 import "./Navbar.css";
-import { ProductosContext } from "../Contexto/ContextProducts";
-import ModalCarrito from '../Modal/ModalCarrito'
+import ModalCarrito from '../Carrito/ModalCarrito'
 import { NavbarBrand } from "react-bootstrap";
-
+import { ProductosContext } from "../Contexto/ContextProducts";
 function BarraNav() {
-  // const {carrito} = useContext(ProductosContext);
+  const {carrito} = useContext(ProductosContext);
 
   const [showModal, setShowModal] = useState(false);
 
@@ -25,7 +23,7 @@ function BarraNav() {
         <Navbar.Brand as={Link} to="/">
           React-Tech
         </Navbar.Brand>
-        <NavbarBrand><ModalCarrito className="carrito-btn" showModal={showModal} setShowModal={setShowModal} /></NavbarBrand>
+        <NavbarBrand as={Link} to="CartModal"><ModalCarrito className="carrito-btn" showModal={showModal} setShowModal={setShowModal} /></NavbarBrand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">

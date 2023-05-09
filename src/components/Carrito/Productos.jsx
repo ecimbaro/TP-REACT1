@@ -1,14 +1,16 @@
-import React, { useContext } from "react";
+import React, { useContext,useState } from "react";
 import { ProductosContext } from "../Contexto/ContextProducts";
 import CardsLista from "../cards/CardsLista";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
+
 
 const Productos = () => {
   const {productos, addToCart} =useContext(ProductosContext);
 
   return (
     <div className="Container">
+   
       <h1 className="oferta-tiempo">TODOS LOS PRODUCTOS</h1>
       <Row
         sm={2}
@@ -23,6 +25,7 @@ const Productos = () => {
           </Col>
         ))}
       </Row>
+  
     </div>
   );
 };

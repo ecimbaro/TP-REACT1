@@ -14,7 +14,7 @@ const Portada = () => {
 
       <div className="img-home">
         <img
-          className="img-celu img-fluid"
+          className="img-celu"
           src="https://armoto.vtexassets.com/arquivos/ids/163027-1200-auto?v=638096834845970000&width=1200&height=auto&aspect=true"
           alt="flip"
         />
