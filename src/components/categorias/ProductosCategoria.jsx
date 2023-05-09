@@ -1,7 +1,8 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { ProductosContext } from "../Contexto/ContextProducts";
 import CardsLista from "../cards/CardsLista";
 import { Col, Row } from "react-bootstrap";
+import ProductosModal from "../Modal/ProductosModal";
 
 const ProductosCategoria = ({categoria}) => {
   const { productos, addToCart} = useContext(ProductosContext);
@@ -10,6 +11,8 @@ const ProductosCategoria = ({categoria}) => {
     return !categoria || producto.categoria === categoria;
   });
   
+//Modal
+const [showModal, setShowModal] = useState(false);
 
   return (
     <div>
@@ -21,6 +24,7 @@ const ProductosCategoria = ({categoria}) => {
           </Col>
         ))}
       </Row>
+      <ProductosModal show={showModal} onHide={() => setShowModal(false)}  addToCart={addToCart}/>
     </div>
   </div>
   );
