@@ -4,11 +4,15 @@ import "./cardsStyle.css";
 import { ProductosContext } from "../Contexto/ContextProducts";
 import ProductosModal from "../Modal/ProductosModal";
 
-const CardsLista = ({ data }) => {
+const CardsLista = ({data}) => {
   const { addToCart } = useContext(ProductosContext);
-  const { id, nombre, precio, precioAntes, descuento, imagenes } = data ?? {};
-  //modal
-  const [showModal, setShowModal] = useState(false);
+  const { id, nombre, precio, precioAntes, descuento, imagenes } =data ?? {};
+ //Modal 
+ const [showModal, setShowModal] = useState(false);
+
+ const handleShowModal = () => setShowModal(true);
+ const handleCloseModal = () => setShowModal(false);
+
 
   return (
     <div className="contenedor-productos" style={{ width: "15rem" }}>
@@ -44,21 +48,15 @@ const CardsLista = ({ data }) => {
           <span className="antes"> ${precioAntes} </span>
           <span className="descuento"> {descuento} </span>
           <p className="fw-bold oferta"> ${precio} </p>
-          <button
-            className="btn btn-cards"
-            onClick={() => {
-              setShowModal(true);
-            }}
-          >
-            Comprar
-          </button>
+          <button className="btn btn-cards" onClick={handleShowModal}> Comprar </button>
+             <ProductosModal
+           producto={data}
+           show={showModal}
+           handleClose={handleCloseModal}
+           
+          />
+   
         </div>
-        <ProductosModal
-          show={showModal}
-          onHide={() => setShowModal(false)}
-          addToCart={addToCart}
-          selectedProductId={id}
-        />
       </div>
     </div>
   );

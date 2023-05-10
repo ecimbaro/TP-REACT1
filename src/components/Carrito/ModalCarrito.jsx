@@ -1,4 +1,4 @@
-import React, { useState, useContext, useEffect } from "react";
+import React, { useState, useContext} from "react";
 import Button from "react-bootstrap/Button";
 import { Modal as BootstrapModal } from "react-bootstrap";
 import Item from "./Item";
@@ -7,7 +7,8 @@ import { ProductosContext } from "../Contexto/ContextProducts";
 
 
 function ModalCarrito() {
-  const {carrito,productos,deleteFromCart, clearCart } = useContext(ProductosContext);
+  const {carrito,productos,deleteFromCart,addToCart, clearCart } = useContext(ProductosContext);
+  
   const [showCarrito, setShowCarrito] = useState(false);
 
   //Para total productos
@@ -16,13 +17,16 @@ function ModalCarrito() {
   const handleClose = () => setShowCarrito(false);
   const handleShow = () => setShowCarrito(true);
 
+
   let totalProductos = 0;
   carrito.forEach((item) => {
     totalProductos += item.cantidad;
   });
-  //toal de los productos del carrito
+  //total de los productos del carrito
   const total = carrito.reduce((acc, item) => acc + item.cantidad * item.precio, 0);
+  const totalRedondeo = total.toFixed(2);
   
+
   return (
     <div className="container-fluid contenedor-modal">
       <Button className="icono-carrito" onClick={handleShow}>
@@ -30,17 +34,17 @@ function ModalCarrito() {
       </Button>
 
       <BootstrapModal show={showCarrito} onHide={handleClose} centered
-      size="lg" style={{ maxWidth: "100%" }}>
+      size="lg">
         <BootstrapModal.Header closeButton>
           <BootstrapModal.Title> Mi Carrito </BootstrapModal.Title>
         </BootstrapModal.Header>
         <BootstrapModal.Body>
           {" "}
-          {carrito.map((producto, index) => (
-            <Item key={index} data={producto} deleteFromCart={deleteFromCart} />
+          {carrito.map((item, index) => (
+            <Item key={index} data={item} deleteFromCart={deleteFromCart} />
           ))} 
             <div className="text-right">
-            <strong>Total: ${total}</strong>
+            <strong>Total: ${totalRedondeo}</strong>
           </div>
         </BootstrapModal.Body>
         <BootstrapModal.Footer>

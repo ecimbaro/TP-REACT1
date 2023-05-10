@@ -3,7 +3,7 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 1fr);
-  width: 70%;
+  width: 80%;
 }
 
 /*contendedor de cada card*/
@@ -38,14 +38,13 @@
 /*Texto cuando selecciono categoria*/
 .fondo-categoria {
   width: 100%;
+  display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
   color: #fff;
   font-size: 1.5rem;
   height: 5rem;
-  display: flex;
- 
 }
 
 .none {
