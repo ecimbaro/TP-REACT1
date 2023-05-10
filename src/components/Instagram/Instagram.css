@@ -1,0 +1,31 @@
+
+.carruselDeInstagram{
+    background: linear-gradient( #3e5954, #5e9188);
+    height: 360px;
+}
+@media ( max-width: 3000px){.carruselDeInstagram{
+   
+    height: 300px;
+}}
+
+@media ( max-width: 715px){.carruselDeInstagram{
+   
+    height: 350px;
+}}
+
+.h1-Instagram{
+    color: white;
+    text-align: center;
+}
+
+.imagen{
+    display:block;
+    margin:auto;
+}
+
+.producto-Ig{
+    background-color: black;
+    display:block;
+    margin:auto;
+}
+
