@@ -5,10 +5,11 @@ import smartphones from './imgsCategorias/smartphones.png'
 import relojes from './imgsCategorias/relojes.png'
 import cafetera from './imgsCategorias/cafetera.png'
 import ProductosCategoria from "./ProductosCategoria";
-import { ProductosContext } from "../Contexto/ContextProducts";
+// import { ProductosContext } from "../Contexto/ContextProducts";
+import { Container } from "react-bootstrap";
 
 const Categorias = () => {
-  const {productos}= useContext(ProductosContext);
+  // const {productos}= useContext(ProductosContext);
   const [categoriaSeleccionada, setCategoriaSeleccionada] = useState(null);
 
   const seleccionarCategoria = (categoria) => {
@@ -30,9 +31,11 @@ const Categorias = () => {
         <h5 className="texto-categoria"> CAFETERAS </h5>
         <img className="img-categoria" src={cafetera} alt="Cafeteras" />
       </Card>
+  
       <h5 className={`p-2 my-3 text-center  ${categoriaSeleccionada ? 'fondo-categoria' : 'none'}`}>{categoriaSeleccionada}</h5>
-     
+      <Container className="w-100"> 
       {categoriaSeleccionada && <ProductosCategoria categoria={categoriaSeleccionada} />}
+    </Container>
     </div>
     </div>
   );

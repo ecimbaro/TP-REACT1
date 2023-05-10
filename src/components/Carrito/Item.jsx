@@ -4,10 +4,11 @@ import { Row, Button } from "react-bootstrap";
 import "./item.css";
 
 const Item = ({data}) => {
-  const {productos, deleteFromCart, addToCart } = useContext(ProductosContext);
+  const {deleteFromCart, addToCart } = useContext(ProductosContext);
   const {id, nombre, precio,imagenes,cantidad, nombreCorto} = data;
-  return (
 
+
+  return (
     <Row className="container flex-column flex-sm-row justify-content-center align-items-center w-100">
 
       <div className="col-2 img-item">

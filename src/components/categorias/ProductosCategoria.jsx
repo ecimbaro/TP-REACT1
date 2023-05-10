@@ -2,31 +2,49 @@ import React, { useContext, useState } from "react";
 import { ProductosContext } from "../Contexto/ContextProducts";
 import CardsLista from "../cards/CardsLista";
 import { Col, Row } from "react-bootstrap";
-import ProductosModal from "../Modal/ProductosModal";
+
 
 const ProductosCategoria = ({categoria}) => {
-  const { productos, addToCart} = useContext(ProductosContext);
+  const { productos, addToCart,carrito} = useContext(ProductosContext);
 
   const productosFiltrados = productos.filter((producto) => {
     return !categoria || producto.categoria === categoria;
   });
-  
-//Modal
+//modal
 const [showModal, setShowModal] = useState(false);
+const [selectedProduct, setSelectedProduct] = useState(null);
 
+const handleShowModal = (product) => {
+  setSelectedProduct(product);
+  setShowModal(true);
+};
+
+const handleAgregarCarrito = () => {
+  if (selectedProduct) {
+    addToCart(selectedProduct.id);
+    setShowModal(false);
+  }
+};
   return (
+
     <div>
-    <div>
-      <Row  sm={2} md={2} lg={3} xl={4} className="d-flex justify-content-center">
+      <Row  sm={2} md={2} lg={3} xl={4} className="d-flex justify-content-around">
         {productosFiltrados.map((producto) => (
           <Col className="py-2" key={producto.id}>
-            <CardsLista data={producto} addToCart={addToCart} />
+          <CardsLista data={producto}   addToCart={handleAgregarCarrito}/>
           </Col>
         ))}
       </Row>
-      <ProductosModal show={showModal} onHide={() => setShowModal(false)}  addToCart={addToCart}/>
+      {selectedProduct && (
+        <ProductosModal
+          producto={selectedProduct}
+          show={showModal}
+          handleClose={() => setShowModal(false)}
+          handleAgregarCarrito={handleAgregarCarrito}
+        />
+      )}
     </div>
-  </div>
+  
   );
 };
 
