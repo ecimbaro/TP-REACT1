@@ -1,11 +1,9 @@
 import React, { useContext, useState } from "react";
 import Carousel from "react-bootstrap/Carousel";
 import "./cardsStyle.css";
-// import { ProductosContext } from "../Contexto/ContextProducts";
 import ProductosModal from "../Modal/ProductosModal";
 
 const CardsLista = ({ data }) => {
-  // const { addToCart } = useContext(ProductosContext);
   const { id, nombreCorto, precio, precioAntes, descuento, imagenes } =
     data ?? {};
   //Modal

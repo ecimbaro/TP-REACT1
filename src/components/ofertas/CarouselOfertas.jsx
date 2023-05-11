@@ -5,12 +5,13 @@ import "react-multi-carousel/lib/styles.css";
 import { responsive } from "./breakpoints";
 import { ProductosContext } from "../Contexto/ContextProducts";
 import ProductosModal from "../Modal/ProductosModal";
-import { Alert } from "react-bootstrap";
 
 function CarouselOfertas() {
   const { productos, addToCart } = useContext(ProductosContext);
 
-  const productosFiltrados = productos.filter((producto) => producto.nuevo === true);
+  const productosFiltrados = productos.filter(
+    (producto) => producto.nuevo === true
+  );
 
   const [showModal, setShowModal] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState(null);
@@ -27,22 +28,36 @@ function CarouselOfertas() {
     }
   };
 
-  const items = productosFiltrados.map(({ id, nombreCorto, precio, imagenes }) => (
-    <div key={id} className="card-oferta">
-      <img className="product-img w-100" src={imagenes.imgPrincipal} alt={nombreCorto} />
-      <p className="texto-ofertaCarousel nombre">{nombreCorto}</p>
-      <p className="texto-ofertaCarousel fw-bold">OFERTA $ {precio}</p>
-      <button className="btn-oferta" onClick={() => handleShowModal({ id, nombreCorto, precio })}>
-        COMPRAR
-      </button>
-    </div>
-  ));
+  const items = productosFiltrados.map(
+    ({ id, nombreCorto, precio, imagenes }) => (
+      <div key={id} className="card-oferta">
+        <img
+          className="product-img w-100"
+          src={imagenes.imgPrincipal}
+          alt={nombreCorto}
+        />
+        <p className="texto-ofertaCarousel nombre">{nombreCorto}</p>
+        <p className="texto-ofertaCarousel fw-bold">OFERTA $ {precio}</p>
+        <button
+          className="btn-oferta"
+          onClick={() => handleShowModal({ id, nombreCorto, precio })}
+        >
+          COMPRAR
+        </button>
+      </div>
+    )
+  );
 
   return (
     <div className="container-ofertas">
       <h1 className="oferta-tiempo">OFERTAS DEL MES</h1>
       <div className="container">
-        <Carousel className="item" showDots={true} responsive={responsive} renderButtonGroupOutside={true}>
+        <Carousel
+          className="item"
+          showDots={true}
+          responsive={responsive}
+          renderButtonGroupOutside={true}
+        >
           {items}
         </Carousel>
       </div>
