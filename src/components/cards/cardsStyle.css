@@ -4,28 +4,28 @@
   box-shadow: 0px 0px 10px rgba(156, 161, 233, 0.555);
   border-radius: 20px;
   margin: auto;
-  height: 22rem;
+  height: 20rem;
 }
 /*texto*/
 .antes {
-  font-size: 1em;
+  font-size: 0.9em;
   text-decoration-line: line-through;
   color: #3e5954;
 }
 .oferta {
-  font-size: 1.2em;
+  font-size: 1em;
   color: black;
 }
 
 .descuento {
   color: white;
   background-color: #5e9188;
-  padding: 0.2rem;
+  padding: 0.1rem;
+  font-size: 0.9em;
 }
 .prod-nombre {
-  font-size: 100%;
+  font-size: 1rem;
   white-space: nowrap;
-  overflow: hidden;
   text-overflow: ellipsis;
 }
 
@@ -33,8 +33,7 @@
 .btn-cards {
   padding: 1em 2em;
   width: 90%;
-  font-size: 12px;
-  text-transform: uppercase;
+  font-size: 0.6rem;
   letter-spacing: 2.5px;
   font-weight: 500;
   color: rgb(255, 255, 255);
@@ -44,8 +43,12 @@
   box-shadow: 0px 8px 15px rgba (0, 0, 0, 0.1);
   transition: 0.3s ease;
   cursor: pointer;
-  outline: none;
 }
+.contenedor-botones {
+  position: relative;
+  top: -11px;
+}
+
 .btn-cards:hover {
   background-color: #3e5954;
   box-shadow: 0px 15px 20px rgba (59, 217, 217, 0.4);
@@ -59,23 +62,10 @@
 
 /*img*/
 .img-product {
-  width: 100%;
+  width: 80%;
   height: 14em;
   object-fit: contain;
   padding: 0.3em;
 }
-.carousel-indicators li {
-  border-radius: 50%;
-  width: 12px;
-  height: 12px;
-  background-color: black;
-  margin: 0 8px;
-}
-.alert {
-  width: 70%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 9999;
-}
+
+

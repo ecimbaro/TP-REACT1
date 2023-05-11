@@ -18,25 +18,27 @@ const Categorias = () => {
 
   return (
     <div className="contenedor-categorias">
+      <h5 className="fondo-categoria">CATEGORIAS</h5>
     <div className="categorias container-fluid py-2">
-      <Card className="my-3 contenedor-cat-individual" onClick={() => seleccionarCategoria("Smartphones")}>
+      
+      <Card className="my-3  container-fluid contenedor-cat-individual" onClick={() => seleccionarCategoria("Smartphones")}>
         <h5 className="texto-categoria"> SMARTHPHONES </h5>
         <img className="img-categoria" src={smartphones} alt="Smarthphones" />
       </Card>
-      <Card className="my-3 contenedor-cat-individual" onClick={() => seleccionarCategoria("Smart watch")}>
+      <Card className="my-3  container-fluid contenedor-cat-individual" onClick={() => seleccionarCategoria("Smart watch")}>
         <h5 className="texto-categoria"> SMART WATCH </h5>
         <img className="img-categoria" src={relojes} alt="Smarth watch" />
       </Card>
-      <Card className="my-3 contenedor-cat-individual" onClick={() => seleccionarCategoria("Cafeteras")}>
+      <Card className="my-3  container-fluid  contenedor-cat-individual" onClick={() => seleccionarCategoria("Cafeteras")}>
         <h5 className="texto-categoria"> CAFETERAS </h5>
         <img className="img-categoria" src={cafetera} alt="Cafeteras" />
       </Card>
-  
-      <h5 className={`p-2 my-3 text-center  ${categoriaSeleccionada ? 'fondo-categoria' : 'none'}`}>{categoriaSeleccionada}</h5>
+      </div>
+      <h5 className={`p-1 my-3 text-center  ${categoriaSeleccionada ? 'fondo-categoria' : 'none'}`}>{categoriaSeleccionada}</h5>
       <Container className="w-100"> 
       {categoriaSeleccionada && <ProductosCategoria categoria={categoriaSeleccionada} />}
     </Container>
-    </div>
+    
     </div>
   );
 };

@@ -28,7 +28,7 @@ const Productos = () => {
       <h1 className="oferta-tiempo">TODOS LOS PRODUCTOS</h1>
       <Row
         sm={2}
-        md={2}
+        md={3}
         lg={3}
         xl={4}
         className="g-4 justify-content-center  pb-4 pt-3"
