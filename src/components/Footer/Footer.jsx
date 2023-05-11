@@ -38,10 +38,10 @@ export const Footer = () => {
               <li className="nav-item mb-2">Lu-Vi de 08:00 a 20:00</li>
               <li className="nav-item mb-2">Sa-Do-Fer. de 09:00 a 21:00</li>
             </ul>
-            <h5>Cobros</h5>
+            {/* <h5>Cobros</h5>
             <ul className="nav flex-column">
               <li className="nav-item mb-2">cobranza@reactech.ar</li>
-            </ul>
+            </ul> */}
           </div>
 
           <div className="col mb-5">
@@ -53,7 +53,7 @@ export const Footer = () => {
             </ul>
           </div>
 
-          <div className="col-md-3 offset-md-1 mb-3">
+          {/* <div className="col-md-3 offset-md-1 mb-3">
             <form>
               <h5>Suscribete </h5>
               <p>Recibe Nuestras Ofertas</p>
@@ -72,7 +72,7 @@ export const Footer = () => {
                 </button>
               </div>
             </form>
-          </div>
+          </div> */}
         </footer>
       </div>
     </div>

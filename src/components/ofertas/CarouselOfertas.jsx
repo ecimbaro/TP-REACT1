@@ -51,7 +51,7 @@ function CarouselOfertas() {
   return (
     <div className="container-ofertas">
       <h1 className="oferta-tiempo">OFERTAS DEL MES</h1>
-      <div className="container">
+      <div className="container text-center">
         <Carousel
           className="item"
           showDots={true}

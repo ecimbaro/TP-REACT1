@@ -4,8 +4,6 @@ import Carousel from "../carrousel/Carousel";
 import Categorias from "../categorias/Categorias";
 import Redes from "../carrousel/Redes";
 import CarouselOfertas  from '../ofertas/CarouselOfertas'
-import Productos from "../Carrito/Productos";
-
 
 const Home = () => {
   return (
@@ -14,7 +12,6 @@ const Home = () => {
         <Carousel />
         <Categorias />
         <CarouselOfertas />
-        <Productos/>
         <Redes />
        
     </div>
