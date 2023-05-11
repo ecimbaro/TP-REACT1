@@ -29,13 +29,13 @@ const Carousel = () => {
         ></li>
       </ol>
       <div className="carousel-inner" role="listbox">
-        <div className="carousel-item active ">
+        <div className="carousel-item carou-principal active ">
           <img src={imagen1} className="img-fluid d-block" alt="First slide" />
         </div>
-        <div className="carousel-item">
+        <div className="carousel-item carou-principal ">
           <img src={imagen2} className="img-fluid d-block" alt="Second slide" />
         </div>
-        <div className="carousel-item">
+        <div className="carousel-item carou-principal ">
           <img src={imagen3} className="img-fluid d-block" alt="Third slide" />
         </div>
       </div>

@@ -12,23 +12,16 @@
  
 }
 .container-ofertas {
-  width: 100%;
-  display: flex;
-  justify-content: center;
+  display: grid;
+  margin: 2% 0;
 }
-/*cards*/
-.item {
-  text-align: center;
-  padding: 0.7rem;
-  width: 95%;
-  
-}
+
 .card-oferta {
   border: none;
   box-shadow: 0px 0px 5px 1px rgb(109, 108, 108);
-  margin: 1rem;
+  margin: 1rem 2rem;
   text-align: center;
-  width: 17rem;
+  width: 16rem;
 }
 /*TEXTO*/
 .texto-ofertaCarousel {
@@ -63,3 +56,5 @@
 .btn-oferta:hover {
   opacity: 0.7;
 }
+
+

@@ -54,16 +54,19 @@ export const ProductosProvider = (props) => {
 
   const clearCart = () => dispatch({ type: TYPES.CLEAR_CART });
   return (
-     <ProductosContext.Provider value={{productos: state.productos,
+    <ProductosContext.Provider
+    value={{
+      productos: state.productos,
       carrito: state.carrito,
-        updateState,
-        addToCart,
-        deleteFromCart,
-        clearCart,
-        dispatch
-     }}>
-      {props.children}
-    </ProductosContext.Provider>
+      updateState,
+      addToCart,
+      deleteFromCart,
+      clearCart,
+      dispatch,
+    }}
+  >
+    {props.children}
+  </ProductosContext.Provider>
   );
 };
 

@@ -39,9 +39,9 @@ function CarouselOfertas() {
   ));
 
   return (
-    <>
+    <div className="container-ofertas">
       <h1 className="oferta-tiempo">OFERTAS DEL MES</h1>
-      <div className="container-ofertas">
+      <div className="container">
         <Carousel className="item" showDots={true} responsive={responsive} renderButtonGroupOutside={true}>
           {items}
         </Carousel>
@@ -55,7 +55,7 @@ function CarouselOfertas() {
           handleAgregarCarrito={handleAgregarCarrito}
         />
       )}
-    </>
+    </div>
   );
 }
 

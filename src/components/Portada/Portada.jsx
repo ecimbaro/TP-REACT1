@@ -1,16 +1,17 @@
 import "./portada.css";
 import { Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const Portada = () => {
-
   return (
     <div className="Container home">
       <div className="home-texto container-fluid">
         <h3 className="titulo-home fw-bold text-center"> REACT TECH </h3>
         <p className="text-center"> MES DE MAYO ENVIOS SIN CARGO </p>
-        
-        {/* <Button variant="outline-light btn-home" onClick={handleClick}>TIENDA </Button> */}
-        
+
+        <Link to="/Productos">
+          <Button variant="outline-light btn-home">TIENDA</Button>
+        </Link>
       </div>
 
       <div className="img-home">

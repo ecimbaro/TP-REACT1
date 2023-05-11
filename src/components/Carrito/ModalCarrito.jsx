@@ -1,4 +1,4 @@
-import React, { useState, useContext} from "react";
+import React, { useState,useContext,useEffect} from "react";
 import Button from "react-bootstrap/Button";
 import { Modal as BootstrapModal } from "react-bootstrap";
 import Item from "./Item";
@@ -9,28 +9,38 @@ import { ProductosContext } from "../Contexto/ContextProducts";
 function ModalCarrito() {
   const {carrito,productos,deleteFromCart,addToCart, clearCart } = useContext(ProductosContext);
   
-  const [showCarrito, setShowCarrito] = useState(false);
-
-  //Para total productos
-  const [totalCarrito, setTotalCarrito] = useState(0);
-
   const handleClose = () => setShowCarrito(false);
   const handleShow = () => setShowCarrito(true);
 
 
-  let totalProductos = 0;
-  carrito.forEach((item) => {
-    totalProductos += item.cantidad;
-  });
-  //total de los productos del carrito
-  const total = carrito.reduce((acc, item) => acc + item.cantidad * item.precio, 0);
-  const totalRedondeo = total.toFixed(2);
-  
+  // let totalProductos = 0;
+  // carrito.forEach((item) => {
+  //   totalProductos += item.cantidad;
+  // });
+  const [showCarrito, setShowCarrito] = useState(false);
+  const [totalCarrito, setTotalCarrito] = useState(0);
+  const [totalPrecios, setTotalPrecios] = useState(0);
+
+  useEffect(() => {
+    // Calcula la cantidad total de productos en el carrito
+    let totalCantidad = 0;
+    let totalPrecio = 0;
+    carrito.forEach((item) => {
+      totalCantidad += item.cantidad;
+      const producto = productos.find((p) => p.id === item.id);
+      if (producto) {
+        totalPrecio += producto.precio * item.cantidad;
+      }
+    });
+    setTotalCarrito(totalCantidad);
+    setTotalPrecios(totalPrecio);
+  }, [carrito, productos]);
+
 
   return (
     <div className="container-fluid contenedor-modal">
       <Button className="icono-carrito" onClick={handleShow}>
-        <RiShoppingCartLine /> {totalProductos}
+        <RiShoppingCartLine /> {totalCarrito}
       </Button>
 
       <BootstrapModal show={showCarrito} onHide={handleClose} centered
@@ -44,7 +54,7 @@ function ModalCarrito() {
             <Item key={index} data={item} deleteFromCart={deleteFromCart} />
           ))} 
             <div className="text-right">
-            <strong>Total: ${totalRedondeo}</strong>
+            <strong>Total: ${totalPrecios.toFixed(2)}</strong>
           </div>
         </BootstrapModal.Body>
         <BootstrapModal.Footer>
