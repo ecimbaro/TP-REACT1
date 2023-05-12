@@ -1,17 +1,18 @@
-import React, { useState,useContext,useEffect} from "react";
+import React, { useState, useContext, useEffect } from "react";
 import Button from "react-bootstrap/Button";
 import { Modal as BootstrapModal } from "react-bootstrap";
 import Item from "./Item";
 import { RiShoppingCartLine } from "react-icons/ri";
 import { ProductosContext } from "../Contexto/ContextProducts";
-
+import "./carrito.css";
+import carritoBoton from './carritoBoton.png'
 
 function ModalCarrito() {
-  const {carrito,productos,deleteFromCart,addToCart, clearCart } = useContext(ProductosContext);
-  
+  const { carrito, productos, deleteFromCart, addToCart, clearCart } =
+    useContext(ProductosContext);
+
   const handleClose = () => setShowCarrito(false);
   const handleShow = () => setShowCarrito(true);
-
 
   const [showCarrito, setShowCarrito] = useState(false);
   const [totalCarrito, setTotalCarrito] = useState(0);
@@ -32,15 +33,22 @@ function ModalCarrito() {
     setTotalPrecios(totalPrecio);
   }, [carrito, productos]);
 
-
   return (
     <div className="container-fluid contenedor-modal">
+     <div className="carrito-container">
+      <img src={carritoBoton} className="carrito-img" alt="carrito" onClick={handleShow}/>
+      <span className="cantidad-productos">{totalCarrito}</span>
+      </div>
       <Button className="icono-carrito" onClick={handleShow}>
         <RiShoppingCartLine /> {totalCarrito}
       </Button>
 
-      <BootstrapModal show={showCarrito} onHide={handleClose} centered
-      size="lg">
+      <BootstrapModal
+        show={showCarrito}
+        onHide={handleClose}
+        centered
+        size="lg"
+      >
         <BootstrapModal.Header closeButton>
           <BootstrapModal.Title> Mi Carrito </BootstrapModal.Title>
         </BootstrapModal.Header>
@@ -48,13 +56,13 @@ function ModalCarrito() {
           {" "}
           {carrito.map((item, index) => (
             <Item key={index} data={item} deleteFromCart={deleteFromCart} />
-          ))} 
-            <div className="text-right">
+          ))}
+          <div className="text-right p-1">
             <strong>Total: ${totalPrecios}</strong>
           </div>
         </BootstrapModal.Body>
         <BootstrapModal.Footer>
-           <Button
+          <Button
             onClick={() => clearCart()}
             className="btn limpiar-carrito btn-sm"
           >
@@ -64,7 +72,7 @@ function ModalCarrito() {
             Comprar
           </Button>
         </BootstrapModal.Footer>
-        </BootstrapModal>
+      </BootstrapModal>
     </div>
   );
 }

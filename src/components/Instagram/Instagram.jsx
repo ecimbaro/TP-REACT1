@@ -20,7 +20,7 @@ const Instagram= ()=>{
     return(
         <>  
         <div className="carruselDeInstagram">
-        <h1 className="h1-Instagram"> Fotos de nuestro Instagram (@ReactTech-2023)</h1>      
+        <h3 className="h1-Instagram"> Fotos de nuestro Instagram (@ReactTech-2023)</h3>      
     <Carousel  
     showDots={true}
     responsive={Tamaños}

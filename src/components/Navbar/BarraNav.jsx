@@ -1,9 +1,9 @@
-import { useState} from "react";
+import { useState } from "react";
 import "./Navbar.css";
 import ModalCarrito from "../Carrito/ModalCarrito";
-import { NavbarBrand, Button, Nav, Navbar, Container } from "react-bootstrap";
+import { NavbarBrand, Nav, Navbar, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
-
+import logoAncho from "../../assets/logoAncho.png";
 
 function BarraNav() {
   const [showModal, setShowModal] = useState(false);
@@ -14,16 +14,15 @@ function BarraNav() {
 
   return (
     <>
-      <Navbar
-        className="barra-nav"
-        collapseOnSelect
-        expand="lg"
-        variant="dark"
-        fixed="top"
-      >
+      <Navbar className="barra-nav" collapseOnSelect expand="lg" variant="dark">
         <Container>
           <Navbar.Brand as={Link} to="/">
-            React-Tech
+            <img
+              src={logoAncho}
+              alt="logo"
+              className="d-inline-block align-top"
+              style={{ height: "4rem" }}
+            />
           </Navbar.Brand>
           <NavbarBrand>
             <ModalCarrito
@@ -32,7 +31,7 @@ function BarraNav() {
               setShowModal={setShowModal}
             />
           </NavbarBrand>
-   
+
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
@@ -47,11 +46,8 @@ function BarraNav() {
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
-    
-          
         </Container>
       </Navbar>
-
     </>
   );
 }
