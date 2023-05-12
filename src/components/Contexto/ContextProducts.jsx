@@ -18,8 +18,8 @@ export const ProductosProvider = (props) => {
     try {
       const productosURL = "http://localhost:3000/products";
       const carritotURL = "http://localhost:3000/carrito";
-      //Promise.all para hacer las dos solicitudes a la vez y obtener las respuestas de forma paralela.
-      //Esto puede mejorar el tiempo de carga en el caso de que las solicitudes sean lentas o se realicen en un servidor remoto.
+      // Promise.all para hacer las dos solicitudes a la vez y obtener las respuestas de forma paralela.
+      // Esto puede mejorar el tiempo de carga en el caso de que las solicitudes sean lentas o se realicen en un servidor remoto.
       const [resProductos, resCarrito] = await Promise.all([
         axios.get(productosURL),
         axios.get(carritotURL),
@@ -40,7 +40,6 @@ export const ProductosProvider = (props) => {
     updateState();
   }, []);
   
-
   const addToCart = (id) => {
     dispatch({ type: TYPES.ADD_TO_CART, payload: id });
   };
@@ -55,16 +54,19 @@ export const ProductosProvider = (props) => {
 
   const clearCart = () => dispatch({ type: TYPES.CLEAR_CART });
   return (
-     <ProductosContext.Provider value={{productos: state.productos,
+    <ProductosContext.Provider
+    value={{
+      productos: state.productos,
       carrito: state.carrito,
-        updateState,
-        addToCart,
-        deleteFromCart,
-        clearCart,
-        dispatch
-     }}>
-      {props.children}
-    </ProductosContext.Provider>
+      updateState,
+      addToCart,
+      deleteFromCart,
+      clearCart,
+      dispatch,
+    }}
+  >
+    {props.children}
+  </ProductosContext.Provider>
   );
 };
 

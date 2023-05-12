@@ -8,27 +8,24 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 2% auto;
+  margin: 0 auto;
  
 }
-.container-ofertar {
-  width: 100%;
-  display: flex;
-  justify-content: center;
+.container-ofertas {
+  display: grid;
+  margin: 2% 0;
 }
-/*cards*/
 .item {
-  margin:auto;
-  text-align: center;
-  padding: 0.7rem;
-  /* width: 90%; */
+  margin: 0 auto;
+  padding: 1rem;
 }
 .card-oferta {
   border: none;
   box-shadow: 0px 0px 5px 1px rgb(109, 108, 108);
-  margin: 1rem;
   text-align: center;
-  width: 17rem;
+  width: 14rem;
+  display:block;
+  margin:auto;
 }
 /*TEXTO*/
 .texto-ofertaCarousel {
@@ -63,3 +60,5 @@
 .btn-oferta:hover {
   opacity: 0.7;
 }
+
+

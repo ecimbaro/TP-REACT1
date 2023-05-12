@@ -1,6 +1,14 @@
+<<<<<<< HEAD
 .barraNav {
   background-color: #5e9188;
   font-size: 14px;
 
 }
 
+=======
+.barra-nav {
+    background-color: #5e9188 ;
+    display: flex;
+    justify-content: space-around;
+  }
+>>>>>>> 7429087cf8c92018832d72b1a22f3260d2397bac

@@ -8,13 +8,14 @@
   grid-template-columns: 1fr 1fr;
   align-items: center;
   justify-content: center;
+  margin: 0 auto;
 }
 /*Imagen*/
 .img-home {
   justify-content: center;
 }
 .img-celu {
-  width: 100%;
+  width: 80%;
   transition: transform 0.2s ease-in-out;
 }
 .img-celu:hover {
@@ -34,14 +35,11 @@
   padding-left: 1.5rem;
 }
 .btn-home {
-  font-size: 1.2em;
+  font-size: 1.5em;
 }
 
 /*medias queryes*/
 @media (max-width: 768px) {
-    .home {
-      height: 40vh;
-    }
     .titulo-home {
       font-size: 2.2rem;
     }
