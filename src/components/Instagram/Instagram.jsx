@@ -1,14 +1,14 @@
 import React from "react";
-import imagen1 from '../assets/img/Cafetera1-1.png'
-import imagen2 from "../assets/img/Reloj-1.png";
-import imagen3 from "../assets/img/Celular-1.png";
-import imagen4 from "../assets/img/Cafetera2-2.png"
-import imagen5 from "../assets/img/Reloj3.png";
-import imagen6 from "../assets/img/Celular2-1.png";
-import imagen7 from "../assets/img/Cafetera3.png";
-import imagen8 from "../assets/img/Reloj4.png";
-import imagen9 from "../assets/img/Celular3.png";
-import imagen10 from "../assets/img/Cafetera2.png"
+import imagen1 from '../../assets/img/Cafetera1-1.png'
+import imagen2 from "../../assets/img/Reloj-1.png";
+import imagen3 from "../../assets/img/Celular-1.png";
+import imagen4 from "../../assets/img/Cafetera2-2.png"
+import imagen5 from "../../assets/img/Reloj3.png";
+import imagen6 from "../../assets/img/Celular2-1.png";
+import imagen7 from "../../assets/img/Cafetera3.png";
+import imagen8 from "../../assets/img/Reloj4.png";
+import imagen9 from "../../assets/img/Celular3.png";
+import imagen10 from "../../assets/img/Cafetera2.png"
 import "./Instagram.css";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
