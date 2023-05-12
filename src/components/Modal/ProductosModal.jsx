@@ -16,7 +16,7 @@ const ProductosModal = ({ producto, show, handleClose }) => {
       <Modal.Header closeButton>
         <Modal.Title>Confirmar compra</Modal.Title>
       </Modal.Header>
-      <Modal.Body>¿Desea agregar este producto al carrito?</Modal.Body>
+      <Modal.Body>¿Desea agregar el producto al carrito?</Modal.Body>
       <Modal.Footer>
         <Button variant="secondary" onClick={handleClose}>
           Cancelar

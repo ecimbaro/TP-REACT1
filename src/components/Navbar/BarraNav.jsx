@@ -47,6 +47,8 @@ function BarraNav() {
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
+    
+          
         </Container>
       </Navbar>
 

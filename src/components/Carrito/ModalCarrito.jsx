@@ -13,16 +13,12 @@ function ModalCarrito() {
   const handleShow = () => setShowCarrito(true);
 
 
-  // let totalProductos = 0;
-  // carrito.forEach((item) => {
-  //   totalProductos += item.cantidad;
-  // });
   const [showCarrito, setShowCarrito] = useState(false);
   const [totalCarrito, setTotalCarrito] = useState(0);
   const [totalPrecios, setTotalPrecios] = useState(0);
 
   useEffect(() => {
-    // Calcula la cantidad total de productos en el carrito
+    // Calcula la cantidad total de productos y precios en el carrito
     let totalCantidad = 0;
     let totalPrecio = 0;
     carrito.forEach((item) => {
@@ -54,7 +50,7 @@ function ModalCarrito() {
             <Item key={index} data={item} deleteFromCart={deleteFromCart} />
           ))} 
             <div className="text-right">
-            <strong>Total: ${totalPrecios.toFixed(2)}</strong>
+            <strong>Total: ${totalPrecios}</strong>
           </div>
         </BootstrapModal.Body>
         <BootstrapModal.Footer>

@@ -1,19 +1,19 @@
 import React, { useContext, useState } from "react";
 import Carousel from "react-bootstrap/Carousel";
 import "./cardsStyle.css";
-// import { ProductosContext } from "../Contexto/ContextProducts";
 import ProductosModal from "../Modal/ProductosModal";
 
 const CardsLista = ({ data }) => {
-  // const { addToCart } = useContext(ProductosContext);
-  const { id, nombreCorto, precio, precioAntes, descuento, imagenes } =
+  const { id, nombreCorto, precio, porcentajedescuento, descuento, imagenes } =
     data ?? {};
   //Modal
   const [showModal, setShowModal] = useState(false);
 
   const handleShowModal = () => setShowModal(true);
   const handleCloseModal = () => setShowModal(false);
-
+  //descuento
+  const precioDescuento = precio - (precio * porcentajedescuento) / 100;
+  const precioDescuentoRedondeado = Math.round(precioDescuento);
   return (
     <div className="contenedor-productos" style={{ width: "15rem" }}>
       <Carousel interval={null} variant="dark" indicators={false}>
@@ -37,15 +37,23 @@ const CardsLista = ({ data }) => {
       <div className="card-body">
         <h5 className="text-center prod-nombre">{nombreCorto}</h5>
         <div className="text-center">
-          <span className="antes"> ${precioAntes} </span>
-          <span className="descuento"> {descuento} </span>
-          <p className="fw-bold oferta"> ${precio} </p>
-          <div className="contenedor-botones">
+          <span className={descuento ? "antes" : "tarjeta-precio fw-bold"}>
+            $ {precio}
+          </span>
+
+          {descuento ? (
+            <>
+              <span className="descuento"> %{porcentajedescuento} OFF </span>
+              <p className="fw-bold oferta"> ${precioDescuentoRedondeado} </p>
+            </>
+          ) : (
+            false
+          )}
+            <div className={`contenedor-botones ${descuento ? "" : "btn-sindescuento"}`}>
             <button className="btn btn-cards" onClick={handleShowModal}>
               COMPRAR
             </button>
-          </div>
-
+</div>
           <ProductosModal
             producto={data}
             show={showModal}

@@ -5,7 +5,6 @@ import Categorias from "../categorias/Categorias";
 import Redes from "../carrousel/Redes";
 import CarouselOfertas  from '../ofertas/CarouselOfertas'
 
-
 const Home = () => {
   return (
     <div>
@@ -14,6 +13,7 @@ const Home = () => {
         <Categorias />
         <CarouselOfertas />
         <Redes />
+       
     </div>
   );
 };
